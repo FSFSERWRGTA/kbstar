@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/* ##########################################################
+	# 2018 인터넷뱅킹 리뉴얼 : 공통레이아웃 : 헤더푸터 교체용(2015/2017호환)
+########################################################## */
+/* --------------------------------------------------------------------------------
+	# 초기화용
+--------------------------------------------------------------------------------- */
+button {border:0;}
+
+/* --------------------------------------------------------------------------------
+	# 공통레이아웃 : HEADER
+--------------------------------------------------------------------------------- */
+#RENO_2015 .headerWrap {border-bottom:1px solid #f2f2f2 !important;}
+#RENO_2015 #HEADER {height:95px;}
+
+/* SERVICE TITLE & PERSONAL AREA **************************************** */
+#header_content .titPers {left:0;}
+#header_content .titPers > div h1 a:before {content:'';width:0;height:25px;margin:0;}
+#header_content .titPers > div h1 a:before, #header_content .titPers > div h1 a img {display:inline-block;vertical-align:middle;}
+#header_content #personal .svc img {height:25px;}
+
+/* GNB영역 ****************************************************************** */
+.gnbWrap_2015.topGb {width:780px;right:50%;top:15px;margin:0 -490px 0 0;}
+.gnbWrap_2015.topGb * {font-family:'맑은 고딕', 'Malgun Gothic' !important;}
+.gnbWrap_2015.topGb #gnb_2015 {float:right;}
+.gnbWrap_2015.topGb #gnb_2015 > li {margin:0;}
+.gnbWrap_2015.topGb #gnb_2015 > li > h3 {height:30px;background:none;display:block !important;font-weight:normal;margin-top:0}/* 2019-06-21 */
+.gnbWrap_2015.topGb #gnb_2015 > li > h3 > a {font-size:13px;line-height:26px !important;padding:0 10px;color:#5a5a5a;font-weight:normal}/* 2019-06-21 */
+.gnbWrap_2015.topGb #gnb_2015 > li:first-child > h3 > a, .gnbWrap_2015.topGb #gnb_2015 > li:first-child + li > h3 > a {font-weight:bold !important;color:#333;}
+.gnbWrap_2015.topGb #gnb_2015 > li:first-child + li + li, .gnbWrap_2015.topGb #gnb_2015 > li.service, .gnbWrap_2015.topGb #gnb_2015 > li.global {margin:0 0 0 10px;}
+.gnbWrap_2015.topGb #gnb_2015 > li:first-child + li + li:before,
+.gnbWrap_2015.topGb #gnb_2015 > li.service:before, .gnbWrap_2015.topGb #gnb_2015 > li.global:before {content:'';display:block;position:absolute;left:-5px;top:50%;width:1px;height:12px;margin:-6px 0 0;background:#ccc;}
+.gnbWrap_2015.topGb #gnb_2015 > li.service > h3 > a, .gnbWrap_2015.topGb #gnb_2015 > li.global > h3 > a {padding-right:25px;background:none;}
+.gnbWrap_2015.topGb #gnb_2015 > li.service > h3 > a:after, .gnbWrap_2015.topGb #gnb_2015 > li.global > h3 > a:after {content:'';display:block;position:absolute;top:50%;right:12px;width:1px;margin:-3px 0 0;border-top:4px solid #666;border-right:3px solid transparent;border-left:3px solid transparent;color:#666;}
+.gnbWrap_2015.topGb #gnb_2015 > li.service[style*="9950"] > h3 > a, .gnbWrap_2015.topGb #gnb_2015 > li.global[style*="9950"] > h3 > a {color:#000;}
+.gnbWrap_2015.topGb #gnb_2015 > li.search > h3 > a {padding:0;width:30px;text-align:center;}
+.gnbWrap_2015.topGb #gnb_2015 > li.search > h3 > a img {margin:6px 0;}
+.gnbWrap_2015.topGb #gnb_2015 > li.global a {font-size:14px;}
+.gnbWrap_2015.topGb #gnb_2015 > li.global ~ li:before {display:none;}
+.gnbWrap_2015.topGb #gnb_2015 li div.dep2 ul li a span.link_blank {position:relative;padding-right:15px;text-decoration:underline;background:none !important;text-decoration:none;color:#767676;}
+.gnbWrap_2015.topGb #gnb_2015 li div.dep2 ul li a span.link_blank:after {content:'';display:block;position:absolute;top:50%;right:0;width:12px;height:12px;margin-top:-8px;background:url('https://oimg1.kbstar.com/img/ocommon/2018/icon_set1.png') no-repeat -20px 0;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbAll, .gnbWrap_2015.topGb #gnb_2015 .gnbGlobal {top:30px;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbAll > ul, .gnbWrap_2015.topGb #gnb_2015 .gnbGlobal > div > ul {position:static;top:0;right:0;width:auto;padding:18px 10px 13px;border:0;border-left:1px solid #e7e4e2;border-top:2px solid #ffe85a;box-shadow:2px 2px 2px 0 rgba(0,0,0,0.1);*border:1px solid #e0e0e0;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbAll {width:620px;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbAll .arrow,.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal .arrow {display:none;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbAll .cate {width:135px !important;border:0;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbAll .cate + .cate {margin:0 0 0 10px;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbAll .cate > .tit {margin-bottom:6px;padding:0 9px 5px;border-bottom:1px solid #e7e4e2;line-height:25px;font-size:14px;color:#53473f;letter-spacing:-1px}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbAll li a {padding:0 0 0 9px;height:24px;color:#767676;line-height:24px;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbAll li a:hover, .gnbWrap_2015.topGb #gnb_2015 li div.gnbAll li a:focus {color:#222;}
+/* gnbGlobal dep2 변경(2019.09.11) */
+.gnbWrap_2015.topGb #gnb_2015 .gnbGlobal > div > ul > li {width:320px !important;border-left:0 !important;}
+.gnbWrap_2015.topGb #gnb_2015 .gnbGlobal {width:328px;}
+.gnbWrap_2015.topGb #gnb_2015 .gnbGlobal > div > ul > li {overflow:hidden;width:308px !important;border-left:0 !important;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul ul.langList{overflow:hidden;position:relative; margin-bottom:19px;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul ul.langList li.lang_china {position: absolute !important;left:165px;top:0px; width:150px;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul ul.langList li.lang_japan{display:block; width:100%;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul ul.langList li.lang_japan a{width:126px;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul ul.langList li a{position:relative;padding-left:39px !important; line-height:38px !important}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul ul.langList li a:before{content:'';display:block;position:absolute;top:50%;left:10px;margin:-12px 0;width:24px;height:24px;background:url('https://oimg1.kbstar.com/img/ocommon/2018/icon_set_n3.png') no-repeat 0 0;border-radius:50%;} /* 2020-12-22 */
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul ul.langList li.lang_eng a:before {background:url('https://oimg1.kbstar.com/img/omoney/2016/ocalculator/bg_flag.png')  no-repeat 0 0; background-position:0 0; }
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul ul.langList li.lang_china a:before {background-position:-80px -300px;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul ul.langList li.lang_japan a:before {background-position:0 -300px;}
+.gnbWrap_2015.topGb #gnb_2015 .gnbGlobal > div > ul > li li{width:150px;}
+.gnbWrap_2015.topGb #gnb_2015 .gnbGlobal > div > ul > li li a {padding:0 !important;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal h4, .gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal h4 > a {margin-bottom:5px;padding-bottom:3px;font-size:14px;font-weight:700;color:#53473f;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal h4 {padding-left:15px !important;border-bottom:1px solid #e7e4e2;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul > li > ul {position:relative;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul > li > ul > li {margin-bottom:0;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul > li > ul > li a {display:block !important;color:#767676;font-size:13px;line-height:38px;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul > li > ul > li a:hover, .gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul > li > ul > li a:focus {font-weight:normal;color:#222;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul > li > ul > li[class*='lan'] {left:165px;width:150px;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul > li > ul > li.lan_com {top:38px;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul > li > ul > li.lan_viet {top:76px;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul > li > ul > li.lan_ind {top:114px;position:absolute;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul > li > ul > li.lan_sg {top:152px;position:absolute;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul img {display:none;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul img + span {padding-left:39px !important;line-height:38px !important;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul img + span:before {content:'';display:block;position:absolute;top:50%;left:10px;margin:-12px 0;width:24px;height:24px;background:url('https://oimg1.kbstar.com/img/ocommon/2018/icon_set_n3.png') no-repeat 0 0;border-radius:50%;} /* 2020-12-22 */
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul img[alt*='Japan'] + span:before {background-position:0 -300px;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul img[alt*='New'] + span:before {background-position:-40px -300px;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul img[alt*='China'] + span:before {background-position:-80px -300px;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul img[alt*='Hong'] + span:before {background-position:-120px -300px;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul img[alt*='UK'] + span:before {background-position:-160px -300px;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul img[alt*='Cambodia'] + span:before {background-position:-200px -300px;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul img[alt*='Vietnam'] + span:before {background-position:-240px -300px;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul img[alt*='India'] + span:before {background-position:-280px -300px;}
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul img[alt*='Myanmar'] + span:before {background-position:-320px -300px;} /* 2020-12-22 미얀마 추가*/
+.gnbWrap_2015.topGb #gnb_2015 li div.gnbGlobal ul img[alt*='Singapore'] + span:before {background-position:-360px -300px;} /* 2022-01-19 싱가포르 추가*/
+
+
+/* --------------------------------------------------------------------------------
+	# 공통레이아웃 : Footer 영역 컨텐츠
+--------------------------------------------------------------------------------- */
+/* KB폰트적용 */
+.foot_area_2015 * {font-family:'맑은 고딕', 'Malgun Gothic' !important;}
+.foot_area_2015 .foot_info li a, .foot_area_2015 .copy,
+.foot_area_2015 .combo_box_wrap .foot_combo_box a,
+.foot_combo_box.phone .select_combo_2015 .phone_table td {font-size:13px;}
+.foot_area_2015 .foot_info li a {letter-spacing:0;}
+.foot_combo_box.phone .select_combo_2015 .select_combo_box {min-width:350px;}
+.select_combo_2015 .select_combo_open div, .select_combo_2015 .select_combo_open a,
+.foot_combo_box.email a, .foot_combo_box.chat a,
+.foot_combo_box.phone .select_combo_2015 .select_combo_open a {padding-top:6px;padding-bottom:6px;}
+.foot_combo_box.phone .select_combo_2015 .select_combo_open span,
+.foot_combo_box.email a span, .foot_combo_box.chat a span,
+.select_combo_2015 .select_combo_open span {padding-top:5px;padding-bottom:5px;}
+
+/* SNS 위치 재설정 */
+.foot_gra {right:0 !important;top:46px !important;}

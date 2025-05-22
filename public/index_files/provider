@@ -1,0 +1,11 @@
+(function(w) {function isEmpty(str) {
+    return typeof str === "undefined" || str === null || str === "";
+  }function setCookie(key, value, expiredDay, isExpired00) {
+    var expired = new Date();
+    expired.setTime(expired.getTime() + (expiredDay * 24 * 60 * 60 * 1E3));
+    if(isExpired00) expired.setHours(0, 0, 0, 0, 0);
+    var cookieValue = encodeURIComponent(value) + '; path=/' + ((isEmpty(expiredDay)) ? '' : '; ' + 'expires=' + expired.toUTCString());
+    document.cookie = key + '=' + cookieValue;
+  }setCookie('_m_uid','eb188528-eff0-3136-9048-910cb3245b35',365);
+setCookie('_m_uidt','C',365);setCookie('_m_uid_type','A',365);
+})(window);

@@ -1,0 +1,432 @@
+@charset "utf-8";
+/* <U PLEATE> UI Dev Team JSW, {JHS, KSH} 170731 */
+
+/* @design_pattern.css */
+/* =자주쓰는계좌(레이어팝업) */
+.listWrap2 ul li.first{border-top:0 !important}
+
+/* =작은테이블 */
+.calendarLayer .calendarSmall td.disabled{color:#999}
+.calendarLayer .calendarSmall td a{color:#222}
+
+/* =공통개인화영역 */
+#header_content .titPers{position:static;margin-top:25px}
+#header_content #personal {margin:15px 0 0 26px !important;}
+#header_content #personal .certMenu{position:static;top:25px;left:0;right:auto;margin-top:0}
+#header_content #personal .certMenu li{}
+#header_content #personal .certMenu li:first-child{margin-left:0}
+#header_content #personal .certMenu a{display:block;padding:0 6px 1px;font-size:13px;color:#333}
+#header_content .h_login,
+#header_content .h_logout,
+#header_content .h_cert{height:auto;border:1px solid #ccc;line-height:normal;letter-spacing:0}
+#header_content .h_cert,
+#header_content .h_logout{margin-left:-1px}.tType02 .total td strong
+#header_content .h_login a,
+#header_content .h_logout a{padding:0 6px 1px;font-size:13px;color:#333}
+#header_content .h_login a>b{color:#000}
+#header_content #personal .h_userName{margin:0}
+#header_content #personal .h_userName em{font-weight:normal;font-size:13px}
+#header_content #personal .h_userName span img{margin-left:0}
+.gnbWrap_2015 {top:19px; right:34px; font-family:'맑은 고딕','Malgun Gothic';}
+
+/* =GNB */
+.gnbWrap_2015{top:25px;right:34px;font-family:'맑은 고딕','Malgun Gothic'}
+.gnbWrap_2015 #gnb_2015{float:left;position:static;right:auto;margin-left:4px}
+.gnbWrap_2015 #gnb_2015>li{margin-right:0}
+.gnbWrap_2015 #gnb_2015>li:first-child>h3{background:none}
+.gnbWrap_2015 #gnb_2015>li>h3{background:url(https://oimg1.kbstar.com/img/ocommon/2017b/gnb_util_line.gif) no-repeat 0 50%;font-weight:normal}
+#b053178 .gnbWrap_2015 #gnb_2015>li>h3{background-position:0 2px} /* 컴포넌트 b053178 로그인 */
+.gnbWrap_2015 #gnb_2015>li>h3>a{display:block;height:100%;padding:0 10px;font-size:13px;color:#333}
+.gnbWrap_2015 #gnb_2015>li.activated>h3{font-weight:bold}
+.gnbWrap_2015 #gnb_2015>li.activated>h3>a{color:#000}
+.gnbWrap_2015 #gnb_2015>li.service>h3>a,
+.gnbWrap_2015 #gnb_2015>li.global>h3>a{padding-right:28px;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/bu_gnb_2015_menu.gif) no-repeat 100% 8px}
+.gnbWrap_2015 #gnb_2015>li.search{margin-left:0}
+.gnbWrap_2015 #gnb_2015>li.search img{margin-top:2px}
+
+.gnbWrap_2015 #gnb_2015 li div.gnbAll .arrow{width:16px;height:10px;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/gnb_icon_arrow.gif) no-repeat}
+.gnbWrap_2015 #gnb_2015 li div.gnbAll>ul{border:2px solid #ccc}
+.gnbWrap_2015 #gnb_2015 li div.dep2 ul li a span.link_blank{background:url(https://oimg1.kbstar.com/img/ocommon/2017b/gnb_icon_open.png) no-repeat 100% 100% !important}
+
+.gnbWrap_2015 #gnb_2015 .gnbGlobal>div>ul{overflow:hidden;width:auto;padding:20px 15px 10px;border:2px solid #ccc}
+.gnbWrap_2015 #gnb_2015 li div.gnbGlobal .arrow{width:16px;height:10px;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/gnb_icon_arrow.gif) no-repeat}
+.gnbWrap_2015 #gnb_2015 li div.gnbGlobal h4{font-family:'맑은 고딕','Malgun Gothic'}
+.gnbWrap_2015 #gnb_2015 li div.gnbGlobal h4>a{color:#988068}
+.gnbWrap_2015 #gnb_2015 li div.gnbGlobal li a{display:block;font-family:'맑은 고딕','Malgun Gothic'}
+.gnbWrap_2015 #gnb_2015 li div.gnbGlobal ul li a span.link_blank{background:url(https://oimg1.kbstar.com/img/ocommon/2017b/gnb_icon_open.png) no-repeat 100% 50% !important;font-size:13px;line-height:normal;color:#444}
+
+/* =GNB Search Container */
+#search_container_2015{z-index:5}
+#search_container_2015 .marginSpace{padding:0}
+@media screen and (max-width:1100px){
+	#search_container_2015 .marginSpace{padding:0}
+}
+#search_container_2015 .search_con_box{width:980px;height:146px;margin:0 auto;padding:36px 0 50px;background:transparent}
+#search_container_2015 .search_con_box .search_form .tabList{margin-left:-2px;background:none}
+#search_container_2015 .search_con_box .search_form .tabList:first-child{margin-left:0;padding-left:140px}
+#search_container_2015 .search_con_box .search_form .tabList>a{display:block;position:relative;padding:2px 40px;border:1px solid #ccc;border-width:2px 2px 0;font-size:15px;font-weight:bold;color:#777}
+#search_container_2015 .search_con_box .search_form .tabList.on>a{z-index:5;border-color:#866853;color:#866853}
+#search_container_2015 .search_con_box .search_form .tabCont .search_inp_box{background-color:#ffe570}
+#search_container_2015 .search_con_box .search_form .tabCont .search_inp{border-color:#ffe570;background-color:#ffe570}
+
+#search_container_2015 .search_form .favor_word{margin-top:20px}
+#search_container_2015 .search_form .favor_word .w_list_box{overflow:hidden;margin-top:0}
+#search_container_2015 .search_form .favor_word .w_list_box li{float:left;position:relative}
+#search_container_2015 .search_form .favor_word .w_list_box li>.bar{position:absolute;top:50%;left:0;width:1px;height:12px;margin-top:-5px;background-color:#ddd;content:''}
+#search_container_2015 .search_form .favor_word .w_list_box li:first-child>.bar{display:none}
+#search_container_2015 .search_form .favor_word .w_list_box a{display:block;padding:0 10px;font-size:13px;color:#555}
+
+#search_container_2015 .select_info{padding-top:40px}
+#search_container_2015 .select_info .selectBox_2015{height:25px;background:#ffe570 url(https://oimg1.kbstar.com/img/ocommon/2017b/bg_select_arr_down4.png) no-repeat 100% 50%;font-size:15px;box-sizing:content-box}
+#search_container_2015 .select_info input[type=text]{height:35px;background-color:#ffe570}
+#search_container_2015 .select_info .btn_search{width:70px;height:45px;margin-left:6px;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/txt_search.png) no-repeat}
+
+#search_container_2015 .search_con_box .btn_close{top:36px;right:0;left:auto !important;width:auto;height:auto;padding:0 25px 0 0;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/btn_search_close.png) no-repeat 100% 50%;font-size:14px;color:#777;text-indent:0}
+
+/* =Search Inp Radio */
+.search_radio_box_2015 .radio_list label{background:url(https://oimg1.kbstar.com/img/ocommon/2017b/bg_radio_input.png) no-repeat 0 50%;font-size:15px}
+.search_radio_box_2015 .radio_list.on label{background:url(https://oimg1.kbstar.com/img/ocommon/2017b/bg_radio_input_on.png) no-repeat 0 50%}
+.search_radio_box_2015 .radio_list input[type=radio]{top:3px}
+
+/* =FOOTER */
+.foot_area_2015 .foot_info{margin-bottom:20px}
+.foot_area_2015 .foot_info li{position:relative}
+.foot_area_2015 .foot_info li a{padding:0 10px 2px 11px;font-family:'맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;font-size:13px;color:#333}
+.foot_area_2015 .copy{margin-top:16px;font-size:12px;color:#333}
+.foot_area_2015 .combo_box_wrap .foot_combo_box{width:162px}/*2018-12-27 수정*/
+
+.select_combo_2015 .select_combo_open{border:1px solid #666;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/bg_select_arr_down2.png) 100% 50% no-repeat}
+.select_combo_2015 .select_combo_open.select_focus{background:url(https://oimg1.kbstar.com/img/ocommon/2017b/bg_select_arr_up2.png) 100% 50% no-repeat}
+.select_combo_2015 .select_combo_open div,
+.select_combo_2015 .select_combo_open a,
+.select_combo_2015 .select_combo_open span{display:block;padding:5px 6px 6px;font-size:13px}
+.select_combo_2015 .select_style{border:1px solid #666;background:transparent}
+
+.foot_area_2015 .combo_box_wrap .foot_combo_box.phone{width:182px}
+
+.foot_combo_box.phone .select_combo_2015 .select_combo_open{border:1px solid #bbb;background-image:url(https://oimg1.kbstar.com/img/ocommon/2017b/bg_select_arr_down2.png)}
+.foot_combo_box.phone .select_combo_2015 .select_combo_open.select_focus{border:1px solid #b2a89e;background-image:url(https://oimg1.kbstar.com/img/ocommon/2017b/bg_select_arr_up2.png)}
+.foot_combo_box.phone .select_combo_2015 .select_combo_open div,
+.foot_combo_box.phone .select_combo_2015 .select_combo_open a,
+.foot_combo_box.phone .select_combo_2015 .select_combo_open span{padding:5px 0 6px;font-size:13px}
+.foot_combo_box.phone .select_combo_2015 .select_combo_open a{padding:5px 10px 6px}
+.foot_combo_box.phone .select_combo_2015 .select_combo_open span{padding-left:24px;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/ico_footer_phone.png) no-repeat 0 50%}
+
+.foot_combo_box.phone .select_combo_2015 .select_combo_box{overflow:hidden;width:324px;padding:0 15px;border:1px solid #bbb}
+.foot_combo_box.phone .select_combo_2015 .phone_table{width:100%;border:0}
+.foot_combo_box.phone .select_combo_2015 .phone_table th{padding:15px 0 17px 0;border-top-color:#e9e9e9;background:transparent;font-size:13px;color:#7d5735;vertical-align:top}
+.foot_combo_box.phone .select_combo_2015 .phone_table td{padding:15px 0 17px 0;border-top-color:#e9e9e9}
+.foot_combo_box.phone .select_combo_2015 .phone_table td p:first-child{margin-bottom:12px}
+
+.foot_area_2015 .combo_box_wrap .foot_combo_box.email{width:auto}
+.foot_combo_box.email{border:1px solid #bbb}
+.foot_combo_box.email a,
+.foot_combo_box.email a span{padding:5px 0 6px;font-size:13px}
+.foot_combo_box.email a{padding:5px 10px 6px}
+.foot_combo_box.email a span{padding-left:24px;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/ico_footer_email.png) no-repeat 0 50%}
+
+.foot_area_2015 .combo_box_wrap .foot_combo_box.chat{width:auto}
+.foot_combo_box.chat{border:1px solid #bbb}
+.foot_combo_box.chat a,
+.foot_combo_box.chat a span{padding:5px 0 6px;font-size:13px}
+.foot_combo_box.chat a{padding:5px 10px 6px}
+.foot_combo_box.chat a span{padding-left:24px;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/ico_footer_chat.png) no-repeat 0 50%}
+
+.foot_combo_box.service .select_combo_open{border:1px solid #bbb}
+.foot_combo_box.service .select_combo_2015 .select_style{border:1px solid #bbb}
+
+.foot_gra{top:43px;right:6px}
+.foot_gra ul li{width:32px;height:32px}
+.foot_gra ul li:first-child,
+.foot_gra ul li:first-child a{margin-left:0}
+.foot_gra ul li a{width:32px;height:32px}
+.foot_gra ul li.facebook a{background-image:url(https://oimg1.kbstar.com/img/ocommon/2017b/ico_footer_sns_facebook.png)}
+.foot_gra ul li.kakaostory a{background-image:url(https://oimg1.kbstar.com/img/ocommon/2017b/ico_footer_sns_kakaostory.png)}
+.foot_gra ul li.instagram a{background-image:url(https://oimg1.kbstar.com/img/ocommon/2017b/ico_footer_sns_instagram.png)}
+
+/* =온금-LNB더보기 */
+#FOOTER_2015{padding-top:20px;border-top:1px solid #d4d4d4;background:none}
+
+/** [help Desk] */
+/* =개인 : help Desk */
+.helpDesk_2015{height:auto;padding-top:40px}
+.helpDesk_2015:after{display:table;content:'';clear:both}
+.helpDesk_2015 h4,
+.helpDesk_2015 h4>a{font-size:15px;color:#333}
+.helpDesk_2015 [class*=box]{padding-left:10px;border-left:0}
+.helpDesk_2015 .box01{margin-left:20px}
+.helpDesk_2015 .noticeList li{margin-top:2px;background:url(https://oimg1.kbstar.com/img/ocommon/2015/bl_gry.png) 0 8px no-repeat}
+.helpDesk_2015 .noticeList li:first-child{margin-top:0}
+.helpDesk_2015 .noticeList .addTxt>a{background:url(https://oimg1.kbstar.com/img/ocommon/2017b/gnb_icon_open.png) no-repeat 100% 50%;font-family:'맑은 고딕','Malgun Gothic';line-height:normal;color:#333}
+.helpDesk_2015 .ico_lang{width:141px;height:15px;margin-top:6px;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/ico_help_desk_lang.png)  no-repeat}
+
+/* =공지사항 목록 */
+[class*='2015'] .noticeList li{height:auto;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/bl_dgry.png) 0 8px no-repeat;line-height:normal}
+
+/* =공통 수정 */
+#RENO_2015 .linemap{top:24px;padding-left:0;background:none}
+#RENO_2015 .linemap em{font-weight:bold}
+#RENO_2015 .toparea{padding-top:64px}
+
+/* =LNB */
+#RENO_2015 .lnbTitle{margin:0 12px 0 0 !important;border-bottom-color:#888}
+#RENO_2015 .lnbWrap p{background-image:url(https://oimg1.kbstar.com/img/ocommon/lnb/bg_certiGo_2017.png)}
+#RENO_2015 .lnbWrap p a{padding-left:14px;font-weight:bold}
+
+/* depth1 */
+#RENO_2015 .lnb>li{margin-right:12px}
+#RENO_2015 .lnb>li.last{border-bottom-color:#888}
+#RENO_2015 .lnb li ul li{padding:0 10px}
+#RENO_2015 .lnb>li>a{border-top-color:#e0e0e0;background-color:transparent}
+#RENO_2015 .lnb li a:hover,
+#RENO_2015 .lnb li a:focus,
+#RENO_2015 .lnb li a:active,
+#RENO_2015 .lnb li a.instance{background:#ffe570 url(https://oimg1.kbstar.com/img/ocommon/2017b/snb_arr_2.png) 100% 50% no-repeat}
+
+/* depth2 */
+#RENO_2015 .lnb li ul{width:210px;max-width:100%;border-color:#bbb}
+#RENO_2015 .lnb li li a{padding:10px;letter-spacing:-1px}
+#RENO_2015 .lnb li li a:hover,
+#RENO_2015 .lnb li li a:focus,
+#RENO_2015 .lnb li li a:active{background:#ffe570}
+#RENO_2015 .lnb li.on ul{border:1px solid #bbb;-webkit-box-shadow:2px 2px 4px 1px rgba(85,85,85,.04);box-shadow:2px 2px 4px 1px rgba(85,85,85,.04);-o-box-shadow:2px 2px 4px 1px rgba(85,85,85,.04);-ms-box-shadow:2px 2px 4px 1px rgba(85,85,85,.04);-mos-box-shadow:2px 2px 4px 1px rgba(85,85,85,.04);filter:progid:DXImageTransform.Microsoft.Shadow(color:'#858585',Direction=120,Strength=3)}
+#RENO_2015 .lnb li.on ul a{margin-left:0;padding:10px 8px;letter-spacing:-1px}
+#RENO_2015 .lnb li.on li{width:auto;padding:0 10px}
+#RENO_2015 .lnb li.on a,
+#RENO_2015 .lnb li.on a:hover,
+#RENO_2015 .lnb li.on a:focus,
+#RENO_2015 .lnb li.on a:active{background:url(https://oimg1.kbstar.com/img/ocommon/2017b/snb_arr.png) 100% 50% no-repeat}
+#RENO_2015 .lnb li.on a.single{background-image:url(https://oimg1.kbstar.com/img/ocommon/2017b/snb_arr_2.png)}
+#RENO_2015 .lnb li.on a{letter-spacing:0}
+#RENO_2015 .lnb li.on li.on a{background:#ffe570 !important}
+#RENO_2015 .lnb li.on li.hold a{background:#e5e5e5 !important}
+
+/** [조회, 이체] */
+/* =Reset */
+input[readonly=readonly]{pointer-events:none}
+
+/* =Common */
+.pr0{padding-right:0 !important}
+.tit_subtxt{margin-left:10px;font-size:12px;font-weight:normal}
+.input_v1{display:inline-block;line-height:23px;vertical-align:top !important}
+
+/* =Set Class */
+.clearfix:after{display:table;clear:both;content:''}
+.placeholder{color:#c7c7cd}
+
+/* =공통 :: 탭메뉴 */
+.tabMenu li.mykb{width:70px}
+.tabMenu li.mykb a.time1,
+.tabMenu li.mykb a.time2,
+.tabMenu li.mykb a.time3,
+.tabMenu li.mykb a.time4,
+.tabMenu li.mykb a.time5,
+.tabMenu li.mykb a.time6{width:auto}
+.tabMenu li.online-fc a{display:block;width:auto !important;height:26px !important;padding:8px 7px 0 6px !important;border:1px solid #caa20b !important;border-width:1px 1px 0 !important;background:#fdcd15 !important;line-height:1.65}
+.tabMenu li a{padding:8px 16px 0;font-size:12px}
+.tabMenu.tabSmall li a{padding:8px 6px 0}
+
+/* =공통 :: Table */
+.tType02 .tRight{padding-right:5px;text-align:right}
+.tType02 tfoot td{padding:11px 0 9px 13px;border-right:0;background:#f9f9f9}
+.tType02 tfoot td span{padding-right:18px}
+
+/* =공통 :: 테이블 내 리스트 */
+.tbl_infolist{margin-top:5px}
+.tbl_infolist li{padding-left:9px}
+.tbl_infolist li:before{display:inline-block;margin-left:-9px;padding-right:5px;content:'*'}
+
+/* =공통 :: 테이블 내 안내사항 아이콘 */
+a.infotxt_lypop{display:inline-block;padding-top:20px;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/btn_question.png) no-repeat 50% 0}
+
+/* =공통 :: 알림 텍스트 두줄 */
+.notiBox_v1 .inner .inq_no{display:table-cell;line-height:1.5em}
+
+/* =공통 :: 안내사항 아이콘 */
+a.info_lypop{display:inline-block;width:18px;height:18px;margin:-2px 3px 0;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/btn_question.png) no-repeat 0 50%;text-indent:-9999px;vertical-align:middle}
+
+/** [조회] */
+/* =계좌 조회 List */
+.accountWrap .accountList_head{position:relative;margin-bottom:8px}
+.accountWrap .accountList_head.line{margin-bottom:13px;padding-bottom:8px;border-bottom:1px solid #c9c5bf}
+.accountWrap .accountList_head h3{display:inline-block;margin:0;padding-left:32px;font-size:14px;font-weight:bold;color:#666;vertical-align:middle}
+.accountWrap .accountList_head .accountToggle{position:absolute;top:0;left:0;width:22px;height:22px;margin:0;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/btn_toggle_close.gif) no-repeat 0 50%}
+.accountWrap .accountList_head .accountToggle.open{background-image:url(https://oimg1.kbstar.com/img/ocommon/2017b/btn_toggle_open.gif)}
+.accountWrap .accountList_head .accountList_info{float:right;height:13px;margin:8px 0 0;font-size:14px;line-height:15px;color:#666}
+.accountWrap .accountList_head .accountList_info strong{padding:0 5px 0 10px;color:#06809b;letter-spacing:-1px}
+.accountWrap .accountList_head .accountList_info span{margin-left:5px;border-left:1px solid #e6e5e5}
+.accountWrap .accountList_head .accountList_info span:first-child{border-left:0}
+.accountWrap .list li:first-child{border-top:0}
+.accountWrap .table{overflow:hidden;margin-bottom:10px;border-top:1px solid #e6e5e5}
+.accountWrap .table .tType01,
+.accountWrap .table .tType02{margin-top:-2px}
+.accountWrap .accountList_head .accountList_info .account strong{color:#666}
+.accountWrap .accountSum strong{font-weight:normal}
+
+/* =상품요약정보 레이어팝업(툴팁st.) */
+.list_account .wrap_layerWrap{display:inline-block;position:relative}
+.list_account .accountLayer{position:absolute;top:30px;right:-15px;width:190px}
+.list_account .accountLayer ul{overflow:hidden;padding:10px 25px 10px 10px;border:1px solid #cac3be;background-color:#fff}
+.list_account .accountLayer ul:after{position:absolute;top:-11px;right:20px;width:15px;height:12px;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/bg_layer.gif) no-repeat;content:''}
+.list_account .accountLayer ul li{display:block;width:auto}
+.list_account .accountLayer .btnClose a{display:block;position:absolute;top:5px;right:5px;width:23px;height:19px;background:url(https://oimg1.kbstar.com/img/ocommon/btn/btn_layer_close.gif) no-repeat;text-indent:-9999px}
+.acct_info .list_type1.acct_list.line li .accountLayer li{float:none;width:auto;white-space:normal}
+.list_account .list_type1 li li{margin-left:0;text-indent:0;background:url(https://oimg1.kbstar.com/img/ocommon/bult_list1.gif) no-repeat 0 7px}
+
+/* =총 계좌잔액 */
+.full_account_srch .my_account{position:relative;padding:25px;border:4px solid #ddd}
+.full_account_srch .my_account strong{font-size:14px;color:#666}
+.full_account_srch .my_account .balance span{display:inline-block;font-family:malgun gothic;font-size:28px;font-weight:bold;line-height:30px;color:#333}
+.full_account_srch .my_account .go_home{position:absolute;top:30px;right:25px;text-align:right}
+.full_account_srch .my_account .go_home p{font-size:16px;font-weight:bold;color:#584f46}
+.full_account_srch .my_account .go_home a{padding-right:13px;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/btn_arrow.png) no-repeat 100% 1px;font-size:14px;color:#6a5847}
+.full_account_srch .notice{padding:20px 0 20px 0}
+.full_account_srch .notice img{display:inline-block;margin:0 27px 0 26px;vertical-align:middle}
+.full_account_srch .notice .notice_list{display:inline-block;vertical-align:middle}
+.full_account_srch .notice .notice_list li{padding-left:8px;background:url(https://oimg1.kbstar.com/img/ocommon/bult_list1.gif) no-repeat 0 10px;font-size:12px;line-height:24px;color:#666}
+.full_account_srch .notice .notice_list li .date{margin-left:5px}
+.full_account_srch .notice .notice_list li a{display:inline-block;padding-right:20px;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/btn_arrow_box.gif) no-repeat 100% 3px;color:#666}
+
+/* =조회기간 */
+.inq_period{overflow:hidden}
+.inq_period .period1{float:left}
+.inq_period .period2{float:left;margin-left:30px}
+
+/* =상품요약정보 */
+.acct_info{margin:0;padding:0 15px}
+.acct_info .list_account dt{padding-bottom:10px}
+.acct_info .list_account dt .acct_num{font-size:23px}
+.acct_info .list_account dt .acct_nick{font-size:13px}
+.acct_info .list_account dt .acct_name{display:block;padding:0;background:none;font-size:15px}
+.acct_info .list_account .acct_btn{position:inherit;top:auto;right:auto;padding:0 0 10px}
+.acct_info .list_account .list_type1.acct_list li{width:200px}
+.acct_info .list_account .list_type1.acct_list li a{display:inline-block;margin-left:5px;text-decoration:underline}
+.acct_info .list_account .list_type1.acct_list li strong{font-weight:normal}
+.acct_info .list_account .list_type1.acct_list li span{font-family:Arial}
+.acct_info .list_account .list_type1.acct_list.line{overflow:visible;margin:10px 0 0;padding:18px 0 0;border-top:1px solid #ebebeb}
+.acct_info .list_account .list_type1.acct_list.line:after{display:block;clear:both;content:''}
+.acct_info .list_account .list_type1.acct_list.line li{float:left;min-height:20px;background-position:0 6px}
+.acct_info .list_account .list_type1.acct_list.line li.point_list{clear:both;width:650px}
+.acct_info .list_account .list_type1.acct_list.line li.point_list span{color:#ef0000}
+.acct_info .list_account .list_type1.acct_list.line li.point_list p{color:#ef0000}
+.acct_info .list_account .list_type1.acct_list.line li.blLine{clear:both}
+
+/* =고객정보 */
+.depositBoxType3 .list_type3 li.case1 span{display:inline-block;width:160px}
+.depositBoxType3 .list_type3 li.case2 span{display:inline-block;width:168px}
+#loan_infoBox .list_type3 li.case3 span{display:inline-block;width:70px}
+#loan_infoBox .list_type3 li span{display:inline-block;width:140px}
+
+/* =상품상세리스트 */
+.prd_detail_list{border-top:1px solid #d4d4d4}
+.prd_detail_list li{overflow:hidden;position:relative;padding:30px;border-bottom:1px solid #d4d4d4}
+.prd_detail_list li .prd_img{display:inline-block;width:120px;margin-right:45px;font-size:14px;color:#4e473f;vertical-align:middle}
+.prd_detail_list li .prd_info{display:inline-block;vertical-align:middle}
+.prd_detail_list li .prd_name{margin-right:10px;font-size:14px;font-weight:bold;color:#4e473f;vertical-align:middle}
+.prd_detail_list li .prd_num{font-size:14px;font-weight:bold;color:#4e473f;vertical-align:middle}
+.prd_detail_list li .prd_period{padding:5px 0 0 9px;background:url(https://oimg1.kbstar.com/img/ocommon/bult_list1.gif) no-repeat 0 12px}
+.prd_detail_list li .btns{position:absolute;top:50%;right:30px;margin-top:-14px}
+.prd_detail_list.finance_src{margin:0 0 40px}
+.prd_detail_list.finance_src li .prd_name{display:block;font-size:16px}
+.prd_detail_list.finance_src li .prd_num{display:block;margin:3px 0 7px}
+
+/* =총자산조회 */
+.acct_info.total_asset .list_account dt .acct_name{font-size:12px;color:#7c746e}
+.acct_info.total_asset .list_account dt .acct_num{font-size:14px}
+.acct_info.total_asset .list_account dt .acct_nick{padding-left:10px;border-left:1px solid #d5d3d1;color:#7c746e}
+
+/* =통합포인트 */
+.my_totalPoint{padding:37px 0 37px 280px;border:1px solid #d4d4d4;background:#fff url(https://oimg1.kbstar.com/img/ocommon/2017b/bg_point.png) no-repeat 205px 50%}
+.my_totalPoint p{font-size:15px;font-weight:bold;color:#4e473f}
+.my_totalPoint .sum{display:inline-block;font-family:'맑은 고딕','Malgun Gothic';font-size:19px;font-weight:bold;line-height:35px}
+.my_totalPoint .sum strong{margin-right:5px;font-size:32px;vertical-align:sub}
+
+/* =결제예정금액조회 */
+.tType02 .point_line{border-right:2px solid #aca194;border-left:2px solid #aca194}
+.tType02 .first.point_line th,
+.tType02 .first.point_line td{border-top:2px solid #aca194}
+.tType02 .point_line+.point_line th,
+.tType02 .point_line+.point_line td{border-bottom:2px solid #aca194}
+.tType02 .point_line th,
+.tType02 .point_line td{font-weight:bold}
+.plan_sum{overflow:hidden;border-top:2px solid #d1d1d1}
+.plan_sum li{float:left;width:50%;padding:17px 0;font-size:15px;font-weight:bold;color:#4e473f}
+.plan_sum li span{float:left;padding-left:15px}
+.plan_sum li span+span{float:right;padding-right:5px;text-align:right}
+.plan_sum li.sum strong{color:#0f71bc}
+.plan_sum li.yet strong{color:#d31616}
+
+/* =카드론정보조회 */
+.tType02 .total th{font-size:14px;font-weight:bold}
+.tType02 .total td{font-size:14px}
+.tType02 .total td strong{font-family:'맑은 고딕','Malgun Gothic';font-size:19px;vertical-align:top;line-height:20px}
+
+/* =전계좌조회 맞춤상품찾기 배너 */
+.correct_banner{height:50px;margin-top:40px;padding:25px 54px 25px;background:#ebdec9}
+.correct_banner:after{display:table;clear:both;content:''}
+.correct_banner .title{float:left;width:175px}
+.correct_banner .btn_box{float:right;width:383px;margin-top:3px;background:url(https://oimg1.kbstar.com/img/obank/2016/mykb/bg_correct_ban_box.png) no-repeat 50% 50%}
+.correct_banner .btn_box:after{display:table;clear:both;content:''}
+.correct_banner .btn_box a{float:left}
+.correct_banner .btn_box a+a{margin-left:74px}
+
+/* =투자정보 */
+.box_type3 .list_type3:after{display:table;content:'';clear:both}
+.box_type3 .list_type3 li{float:left;width:340px}
+.box_type3 .list_type3 li span{display:inline-block;width:190px;color:#776c61}
+.box_type3 .list_type3 li strong{font-weight:normal}
+
+/* =정보제공 동의 이용약관 */
+.terms_area{padding:20px}
+
+/** [이체] */
+/* =Bank List */
+.bank_list ul:after{display:table;clear:both;content:''}
+.bank_list li{float:left;width:33.1%;height:46px;margin:-1px 0 0 -1px;border:1px solid #ddd;background-color:#fff}
+.bank_list li:first-child{width:33.2%}
+.bank_list li:hover,
+.bank_list li.on{background-color:#ffde00;color:#000}
+.bank_list a{display:table;width:100%;height:100%;color:#666}
+.bank_list a>span{display:table-cell;font-size:12px;text-align:center;vertical-align:middle}
+
+/* =통합이체 */
+.acct_info2{border-top:1px solid #a0a0a0;border-bottom:1px solid #b8b8b8}
+.acct_info2 .hgroup{position:relative}
+.acct_info2 .hgroup>.sum{height:49px;padding:0 20px;border-bottom:1px solid #e0e0e0;background:#fafafa;font-family:'맑은 고딕','Malgun Gothic';font-size:16px;line-height:49px;color:#333}
+.acct_info2 .hgroup>.sum span{display:inline-block;vertical-align:top}
+.acct_info2 .hgroup>.sum strong{font-size:24px;color:#212121}
+.acct_info2 .hgroup>.btn_modify{position:absolute;top:14px;right:20px;padding-left:20px;border:0;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/btn_modify.png) no-repeat 0 48%;font-size:13px}
+.acct_info2 .details{overflow:hidden;width:auto;min-height:110px;padding:30px 0;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/bg_acct_info2.gif) no-repeat 286px 50%}
+.acct_info2 .details .trans{float:left}
+.acct_info2 .details .trans.withdraw{width:290px;margin-left:20px}
+.acct_info2 .details .trans.deposit{width:345px;margin-left:45px}
+.acct_info2 .details .trans dl{float:left}
+.acct_info2 .details .trans dt{color:#8a8a8a}
+.acct_info2 .details .trans dt:first-child{display:inline-block;margin-bottom:7px;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/bg_acctIinfo2_ico.gif) no-repeat;text-align:center}
+.acct_info2 .details .trans dt:first-child span{display:inline-block;overflow:hidden;height:24px;padding:0 10px;background:url(https://oimg1.kbstar.com/img/ocommon/2017b/bg_acctIinfo2_ico.gif) no-repeat 100% 0;line-height:24px;color:#c21921;vertical-align:top}
+.acct_info2 .details .trans dd.account,
+.acct_info2 .details .trans dd.name{margin-top:3px;font-size:16px;line-height:20px;color:#333}
+.acct_info2 .details .trans.deposit dt:first-child{background-position:0 100%}
+.acct_info2 .details .trans.deposit dt:first-child span{background-position:100% 100%;color:#0f71bc}
+.acct_info2 .details .trans.deposit dd+dt{margin-top:27px}
+.acct_info2 .details .trans.withdraw dd+dt{margin-top:25px}
+
+/* =SMS 신청 */
+.tType02 td.sms_apply #div_cellphone{display:inline-block;margin-right:4px;vertical-align:top}
+
+
+/* =경찰청 링크 */
+.link_type01{margin-top:35px;padding:15px 5px;width:710px;height:64px;background:url(https://oimg1.kbstar.com/img/obank/cyberbureau.jpg) no-repeat}
+.link_type01 .link_tit{display:inline-block;color:#06809b;font-size:14px;padding:0px 0px 5px 150px}
+.link_type01 .link_txt{padding:0px 0px 0px 150px}
+.link_type01 .link{display:inline-block;padding:3px 0px 0px 150px;color:#06809b;text-decoration:underline}
+.trans_sum{display:inline-block;float:left;width:180px;text-align:right}
+.trans_btns{float:right;margin-right:65px}
+
+.tType01 td .tType02{border-bottom-color:#e6e5e5}
+
+.link_type01.ty2{background:url('https://oimg1.kbstar.com/img/obank/cyberbureau_n.jpg') no-repeat 25px 35px; border:1px solid #ccc;height:auto;position:relative;margin:0 0 20px;}
+.link_type01.ty2 .link_tit{padding-left:170px;}
+.link_type01.ty2 .link_txt{padding-left:170px;}
+.link_type01.ty2 .btns{margin-top:10px;padding-left:170px;}
+.link_type01.ty2 .layerClose button{display:block;width:27px;height:25px;text-indent:-9999px;overflow:hidden;background:url('https://oimg1.kbstar.com/img/ocommon/btn/btn_down_2.gif') no-repeat;position:absolute;top:8px;right:8px;border:0 none}

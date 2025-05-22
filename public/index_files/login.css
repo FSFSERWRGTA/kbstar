@@ -1,0 +1,481 @@
+@charset "utf-8";
+
+/* HEADER */
+
+.headerWrap{margin-bottom:35px;width:918px;padding:0 41px;margin:0 auto}
+#HEADER{width:918px;margin:0 auto;height:100px;background:url(https://oimg1.kbstar.com/img/ocommon/gnb/bg_snbLine.gif) repeat-x 0 100%}
+.hw1{display:none}
+.titPers{left:0px}
+.kbgnb{right:0px}
+.bottom_area{width:918px;margin:0 auto;padding-top:21px;text-align:left;background:url(https://oimg1.kbstar.com/img/ocommon/bg_layout1_bottom.gif) repeat-x}
+.login_area{width:690px;height:362px;margin-left:-41px;padding:50px 140px 0 155px;background:url(https://oimg1.kbstar.com/img/ocommon/login/bg_loginArea.gif) no-repeat 50% 100%}
+.login_area  .cert_area,.login_area .idpw_area{position:relative;float:left;width:325px;}
+.login_area .idpw_area{float:right}
+.login_area .login_box{float:left;width:325px;height:186px;background:url(/img/ocommon/login/bg_login_box.gif) no-repeat 100% 0}
+.login_area .login_box.cert{background-position:0 0}
+.login_area .login_box .input{height:21px}
+
+.login_area .cert_area h2,.login_area .idpw_area h2{height:31px;padding-left:10px;font:0/0 Arial}
+.login_area .cert_area .setting_autopop{overflow:hidden;*zoom:1;margin:0 0 0 65px}
+.login_area .cert_area .setting_autopop dt,.login_area .cert_area .setting_autopop dd{float:left}
+.login_area .cert_area .setting_autopop dt{padding-right:10px}
+.login_area .cert_area .setting_autopop dd label{display:inline-block;padding-right:5px;color:#716c65}
+.login_area .cert_area .setting_autopop dd *{vertical-align:middle}
+.login_area .cert_area .cert_btn{overflow:hidden;*zoom:1;margin:34px 19px 17px 20px;_margin:34px 19px 20px 19px;text-align:center}
+.cert_btn *{_overflow:hidden;*float:left;overflow:visible;display:inline-block;*display:inline;*zoom:1;width:137px;height:60px;margin:0 2px;border:none;color:#4e473f;font-weight:bold;font-size:14px;white-space:nowrap;text-decoration:none !important;cursor:pointer;line-height:64px;letter-spacing:-0.05em;background:url(https://oimg1.kbstar.com/img/ocommon/login/bg_btnCert.gif) no-repeat}
+.cert_btn button span{width:100%;height:100%;text-shadow:1px 1px 0 #ffe79b;filter:dropshadow(color=#ffe79b,offx=0,offy=1,positive=1);background:none}
+.cert_btn a{*float:right;display:inline-block;background-position:100% 0}
+.login_area .link_certCenter{overflow:hidden;*zoom:1;position:absolute;bottom:6px;left:7px}
+.login_area .link_certCenter li{float:left}
+.login_area .link_certCenter li a{display:inline-block;*display:inline;*zoom:1;padding:5px 7px 3px 7px;color:#716a63;letter-spacing:-0.05em;letter-spacing:-1.5px;background:url(https://oimg1.kbstar.com/img/ocommon/login/bg_linkLogin.gif) no-repeat 0 10px}
+.login_area .link_certCenter li.first a{background:none}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	.login_area .link_certCenter{left:5px;letter-spacing:0 !important}
+}
+.login_area .login_box legend{position:absolute;top:-99999%;text-indent:-9999%}
+.login_area .login_box.idpw fieldset{overflow:hidden;*zoom:1;position:absolute;left:22px;bottom:13px;width:283px;padding-bottom:40px}
+.login_area .login_box.idpw fieldset label{display:inline-block;*display:inline;*zoom:1;width:70px;padding-top:4px;font-weight:bold}
+.login_area .login_box.idpw fieldset input{width:126px;margin-bottom:8px}
+.login_area .login_box.idpw fieldset .login{position:absolute;top:0;right:0;width:66px;height:61px;border:none;cursor:pointer;background:url(https://oimg1.kbstar.com/img/ocommon/login/bg_btnCert.gif) no-repeat 0 -138px}
+.login_area .login_box.idpw fieldset .login span{width:100%;height:100%;font-size:14px;font-weight:bold;text-shadow:1px 1px 0 #ffe79b;filter:dropshadow(color=#ffe79b,offx=0,offy=1,positive=1);background:none}
+.login_area .login_box.idpw .mouse{margin-left:70px}
+.login_area .login_box.idpw .mouse label{width:180px;padding-top:2px;font-weight:normal}
+.login_area .login_box.idpw .mouse input{width:auto;margin:2px 5px 0 0}
+.login_area .login_box.idpw .mouse *{vertical-align:middle}
+
+/*로그인에러시*/
+.login_area .login_box.idpw1 fieldset{overflow:hidden;*zoom:1;position:absolute;left:22px;bottom:-13px;width:283px;padding-bottom:40px}
+.login_area .login_box.idpw1 fieldset label{display:inline-block;*display:inline;*zoom:1;width:70px;padding-top:4px;font-weight:bold}
+.login_area .login_box.idpw1 fieldset input{width:126px;margin-bottom:8px}
+.login_area .login_box.idpw1 fieldset .login{position:absolute;top:0;right:0;width:66px;height:61px;border:none;cursor:pointer;background:url(https://oimg1.kbstar.com/img/ocommon/login/bg_btnCert.gif) no-repeat 0 -138px}
+.login_area .login_box.idpw1 fieldset .login span{width:100%;height:100%;font-size:14px;font-weight:bold;text-shadow:1px 1px 0 #ffe79b;filter:dropshadow(color=#ffe79b,offx=0,offy=1,positive=1);background:none}
+.login_area .login_box.idpw1 .mouse{margin-left:70px}
+.login_area .login_box.idpw1 .mouse label{width:180px;padding-top:2px;font-weight:normal}
+.login_area .login_box.idpw1 .mouse input{width:auto;margin:2px 5px 0 0}
+.login_area .login_box.idpw1 .mouse *{vertical-align:middle}
+
+/* 기업 로그인 */
+.ad_bizlogin{float:right;margin:33px 0 12px 0}
+
+.login_area .link_info{clear:both;}
+.login_area .link_info a{display:block;margin-top:12px;padding:1px 0 0 20px;color:#0391b1;background:url(https://oimg1.kbstar.com/img/ocommon/bullet/icon_caution.gif) no-repeat 0 1px}
+
+/* BOTTOM */
+.bottom_area .btmService ,.bottom_area .btmGuide, .bottom_area .btmFaq{float:left;height:127px;padding-left:16px;border-right:1px solid #e9e9e9}
+.bottom_area .btmService{width:300px;padding-left:16px}
+.bottom_area .btmGuide{width:297px;background:url(https://oimg1.kbstar.com/img/ocommon/login/bg_btmGuide.gif) no-repeat 191px 33px}
+.bottom_area .btmFaq{float:right;width:270px;padding-left:0;border-right:none}
+.bottom_area h4{height:26px;color:#463f3a;font-size:14px;}
+.bottom_area .btmService .relationService li{float:left;width:140px;min-height:height:22px;_height:22px;background:url(https://oimg1.kbstar.com/img/ocommon/bullet/bult_btmList.gif) no-repeat 0 8px}
+.bottom_area .btmService .relationService li a{display:block;padding:1px 0 0 10px}
+.bottom_area .btmGuide p{width:160px}
+.bottom_area .btmFaq .faqList li{*zoom:1}
+.bottom_area .btmFaq .faqList li a{display:block;padding:0 0 3px 25px;background:url(https://oimg1.kbstar.com/img/ocommon/login/bg_btmFaq.gif) no-repeat 0 2px}
+
+/* 로그인 추가 */
+.secNum{margin:21px 0 10px 31px;width:263px}
+.secNum td,th{padding:3px 5px 3px 20px}
+.cardNum{width:68px;background:url(https://oimg1.kbstar.com/img/ocommon/login/bg_secNum.gif) no-repeat}
+.cardNum .hidden{position:absolute;top:-9999%;left:-9999%;text-indent:-9999px;}
+.cardNum input{width:38px;text-align:center}
+.secNum .end{text-align:right}
+.securityNum{background-position:0 -206px !important}
+.securityNum .mouse{margin-left:31px !important}
+.securityNum .btnArea{margin-top:13px !important}
+
+.txt_phoneOK{margin:31px 20px 20px 21px}
+
+/* 알림박스 */
+.notiBox{width:690px;margin:0 0 0 114px;background:url(https://oimg1.kbstar.com/img/ocommon/login/bg_notibox.gif) no-repeat}
+.notiBox .inner{height:93px;background-image:url(https://oimg1.kbstar.com/img/ocommon/login/bg_notibox_btm.gif)}
+
+/* 사이버PB */
+.cybPBLogin{height:412px}
+.cybPBLogin .login_box{position:relative;zoom:1}
+.cybPBLogin .cypb_note{clear:both;padding:8px 0 0 10px;background:url(https://oimg1.kbstar.com/img/ocommon/bullet/bult_tip.gif) no-repeat 2px 11px;line-height:1.3;color:#ff8400}
+.cybPBLogin .cypbTip{clear:both;padding-top:10px}
+.cybPBLogin .cypbTip li{padding-left:10px;background:url(https://oimg1.kbstar.com/img/ocommon/bullet/bult_tip.gif) no-repeat 2px 5px}
+
+/*Chrome&Edge 브라우저 로그인영역(2015-08-26) 추가*/
+.login_area .cert_area .cert_btn_bw{overflow:hidden;margin:25px 19px 15px 20px;text-align:center;}
+.cert_btn_bw *{float:left;overflow:visible;display:inline-block;*display:inline;width:178px;height:35px;margin:0 2px;border:none;color:#4e473f;font-weight:bold;font-size:14px;white-space:nowrap;text-decoration:none !important;cursor:pointer;line-height:36px;letter-spacing:-0.05em;background:url('https://oimg1.kbstar.com/img/ocommon/login/bg_cert_bw01.gif') no-repeat left top;}
+.cert_btn_bw button span{width:100%;height:100%;text-shadow:1px 1px 0 #ffe79b;filter:dropshadow(color=#ffe79b,offx=0,offy=1,positive=1);background:none}
+.cert_btn_bw a{float:right;display:inline-block;width:96px;font-weight:normal;font-size:12px;background:url('https://oimg1.kbstar.com/img/ocommon/login/bg_cert_bw02.gif') no-repeat left top;}
+
+
+
+
+
+/*###################################2015 KB스타뱅킹 서비스개편 #################################################*/
+
+
+.login_area { width: 690px; height: 362px; margin: 0 auto; padding: 50px; background: url(https://oimg1.kbstar.com/img/ocommon/login/bg_loginArea.gif) no-repeat 50% 100%;}
+
+.headerWrap {width:100%;margin:0;padding:0;background: url(https://oimg1.kbstar.com/img/ocommon/gnb/bg_snbLine.gif) repeat-x 0 100%;}
+#header {background:none;}
+#preBanner {width:100%;margin:0 auto;}
+#preBanner .errirMessageBox{padding:30px 0 0px 0 !important;}
+#preBanner .errirMessageBox div{width: auto !important}
+#preBanner .errirMessageBox .notiCall{padding-top:4px;}
+/****************************** helpDesk ***************************************/
+.wrapper_2015 {margin:0 !important;top:0 !important;}
+.wrapper_2015 .helpDesk_2015 .noticeList li > a{font-size: 14px;}
+.wrapper_2015 .helpDesk_2015 {width:880px;height:187px;margin:0 auto 0;}
+.wrapper_2015 .helpDesk_2015 > * {height: 160px;}
+.wrapper_2015 .helfBanking {float:left;width:260px;padding:0;border:none;}
+.wrapper_2015 .helfSafty {float:left;width:305px;padding-left: 20px;border-left: 1px solid #e5e5e5;}
+.wrapper_2015 .helfSafty .txtGuide {margin-top:10px;font-size:14px;letter-spacing:-0.5px;color:#333;font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;}
+.wrapper_2015 .helfGuide {float:right;width:273px;padding-left:20px;border-left: 1px solid #e5e5e5;background:none}
+.wrapper_2015 .helfGuide .txtGuide {margin-top:10px;font-size:14px;letter-spacing:-0.5px;color:#333;font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;}
+.wrapper_2015 .helfGuide .txtGuide strong {color:#d06721;font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;}
+
+/****************************** loginBanner ***************************************/
+.notiBox.s7 {width:880px;margin:50px auto 0 !important;background:none;text-align:center;}/*2017-08-04 수정*/
+/****************************** loginBanner ***************************************/
+.loginNotiWrap_2015 {width:100%;background:#fffdec;border-bottom:none;}/*2017-08-04 수정*/
+.loginNotiWrap_2015 .loginNoti {width:880px;margin:0 auto;padding:30px 0 27px; }
+.loginNotiWrap_2015 .loginNoti h3 {text-align:center;}
+.loginNotiWrap_2015 .loginNoti .notice {margin-top:25px;overflow:hidden;}
+.loginNotiWrap_2015 .loginNoti .notice li {float:left;padding-left:20px;width:420px;}
+.loginNotiWrap_2015 .loginNoti .notice li:first-child {padding-left:26px;width:414px;}
+
+
+/****************************** login_area(2017-08-04 수정) ***************************************/
+.log_2015.login_area a, .log_2015.login_area label{font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;}
+
+.log_2015.login_area {width:880px;height:auto;margin:23px auto 0;padding:0;overflow:hidden;background:none;}
+.log_2015.login_area .cert_area {position:relative;float:none;width:500px;padding-bottom:36px;border-right:none;margin:0 auto;}
+.log_2015.login_area .cert_area h2, .log_2015.login_area .idpw_area h2 {height:auto;padding:0;}
+.log_2015.login_area .cert_area .login_box.cert {margin: 22px 0 0 0;background:none;width:auto;height:222px;}
+.log_2015.login_area .cert_area .cert_btn {overflow: hidden;margin:0;text-align:left;font-size:0;line-height:0;}
+.log_2015.login_area .cert_area .login_box.cert .cert_btn * { _overflow: hidden;overflow: visible;display: inline-block;width:246px;height:90px;margin:0;border:none;color: #4e473f;font-weight: bold;font-size: 0;white-space: nowrap;text-decoration: none !important;
+  cursor: pointer; line-height:0; letter-spacing:0;background: url('https://oimg1.kbstar.com/img/ocommon/2017/login/btn_login01.png') no-repeat;float:left;}
+.log_2015.login_area .cert_area .login_box.cert .cert_btn button span {width: 0;height: 0; text-indent:-9999px;text-shadow:none;background: none;}
+.log_2015.login_area .cert_area .login_box.cert .cert_btn a {display: inline-block;background: url('https://oimg1.kbstar.com/img/ocommon/2017/login/btn_login02.png') no-repeat;margin-left:8px;text-indent:-9999px;}
+
+.log_2015.login_area .cert_area .setting_autopop {overflow: hidden;margin:15px auto 26px;width:280px;}
+.log_2015.login_area .cert_area .setting_autopop dt {float: left;padding: 7px 20px 6px 20px;width: 96px;font-size: 0;line-height:0; }
+.log_2015.login_area .cert_area .setting_autopop dd {float: left;clear: none;padding:3px 0 5px;}
+
+.log_2015.login_area .link_certCenter {position:static;left:0;bottom:0;overflow:hidden;width:498px;padding:9px 0 9px 0;border:1px solid #c6bfb4;background:#fffef9;}
+.log_2015.login_area .link_certCenter li {float:left;padding-left:0px;margin-left:0px;text-align:center;border-left:1px solid #c4c3bf;width:32%;}
+.log_2015.login_area .link_certCenter li:first-child {border-left:none;margin:0 !important;}
+.log_2015.login_area .link_certCenter li a {display:block;padding:0 0 2px 0;font-size:13px;line-height:18px;background:none;letter-spacing:0;}
+
+.log_2015.login_area .cert_area .cert_btn_bw {overflow: hidden;margin:0;text-align:left;font-size:0;line-height:0;}
+.log_2015.login_area .cert_area .login_box.cert .cert_btn_bw * { _overflow: hidden;overflow: visible;display: inline-block;width:246px;height:71px;margin:0;border:none;color: #4e473f;font-weight: bold;font-size: 0;white-space: nowrap;text-decoration: none !important;
+  cursor: pointer; line-height:0; letter-spacing:0;background: url('https://oimg1.kbstar.com/img/ocommon/2017/login/btn_login03.png') no-repeat;float:left;}
+.log_2015.login_area .cert_area .login_box.cert .cert_btn_bw button span{width: 0;height: 0; text-indent:-9999px;text-shadow:none;background: none;}
+.log_2015.login_area .cert_area .login_box.cert .cert_btn_bw a.btn_certCenter {display: inline-block;background: url('https://oimg1.kbstar.com/img/ocommon/2017/login/btn_login04.png') no-repeat;margin-left:8px;text-indent:-9999px;}
+.log_2015.login_area .cert_area .login_box.cert .cert_btn_bw .btn_cert.s1 {height:37px; margin-top: 6px;background: url('https://oimg1.kbstar.com/img/ocommon/2017/login/btn_login05.png') no-repeat;}
+.log_2015.login_area .cert_area .login_box.cert .cert_btn_bw a.btn_certCenter.s1{height:37px; margin-top: 6px;background: url('https://oimg1.kbstar.com/img/ocommon/2017/login/btn_login06.png') no-repeat;}
+
+
+.log_2015.login_area .idpw_area {position:relative;float:none;width:500px;padding:0px;margin:0 auto;}
+.log_2015.login_area .idpw_area .login_box.idpw {overflow:hidden;height:224px;width:auto;margin-top:20px;background:none;}
+.log_2015.login_area .idpw_area .login_box.idpw fieldset {overflow:hidden;position:relative;  bottom: inherit;top:0;left:0;width:500px;padding:0;}
+.log_2015.login_area .login_box.idpw fieldset label {width:83px;height:36px;padding:0;margin-bottom:9px;font-size:14px;color:#555;font-weight:bold;line-height:36px;*letter-spacing:-1px}
+.log_2015.login_area .login_box.idpw fieldset label:last-child {min-width:100px;}
+.log_2015.login_area .login_box.idpw fieldset input[type="text"], .log_2015.login_area .login_box.idpw fieldset input[type="password"] {width:236px;margin-bottom:9px;*margin-bottom:8px;*margin-top:-1px;height: 28px;vertical-align:top;font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;}
+.log_2015.login_area .login_box.idpw fieldset .login {position: absolute; top: 0; right: 0; width:160px; height:81px; font-size:0;line-height:0;border: none; cursor: pointer; background: url('https://oimg1.kbstar.com/img/ocommon/2017/login/btn_login07.png') no-repeat;text-indent:-9999px;}
+
+
+.log_2015.login_area .simpleCert{position:relative;width:500px;height:244px;margin:0 auto;}
+.log_2015.login_area .simpleCert *{overflow:hidden;}
+.log_2015.login_area .simpleCert p{font-size:17px;font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;letter-spacing:-1px;padding-top:32px;min-height:130px;}
+.log_2015.login_area .simpleCert p strong{display:block;}
+
+.log_2015.login_area .simpleCert .login {position: absolute; top:20px;right: 0; width:120px; height:81px; font-size:0;line-height:0;border: none; cursor: pointer; background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/btn_login07.png) no-repeat;text-indent:-9999px;}
+.log_2015.login_area .simpleCert .link_certCenter li{width:48%;}
+
+
+/*로그인에러시*/
+ .log_2015.login_area .login_box{background: none}
+.log_2015.login_area .idpw_area .login_box.idpw1 {overflow: hidden; height: auto; width: auto; margin-top: 20px;background: none;}
+.log_2015.login_area .login_box.idpw1 fieldset{overflow:hidden;position:relative;  bottom: inherit;top:0;left:0;width:400px;padding:0;}
+.log_2015.login_area .login_box.idpw1 fieldset label{width:93px;height:36px;padding:0;margin-bottom:9px;font-size:14px;color:#555;font-weight:bold;line-height:36px;}
+.log_2015.login_area .login_box.idpw1 fieldset input[type="text"], .log_2015.login_area .login_box.idpw1 fieldset input[type="password"] {width:171px;margin-bottom:9px;*margin-bottom:8px;*margin-top:-1px;height: 28px;vertical-align:top}
+.log_2015.login_area .login_box.idpw1 fieldset .login{position: absolute; top: 0; right: 0; width:120px; height:81px; font-size:0;line-height:0;border: none; cursor: pointer; background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/btn_login07.png) no-repeat;text-indent:-9999px;}
+.log_2015.login_area .login_box.idpw1 fieldset .login span{width:100%;height:100%;font-size:14px;font-weight:bold;text-shadow:1px 1px 0 #ffe79b;filter:dropshadow(color=#ffe79b,offx=0,offy=1,positive=1);background:none}
+.log_2015.login_area .login_box.idpw1 .mouse{margin:-5px 0 18px 93px;}
+.log_2015.login_area .login_box.idpw1 .mouse label{height:28px;margin:0;padding:0;line-height: 28px;}
+
+
+
+.log_2015.login_area .login_box.idpw .mouse {margin:6px 0 18px 83px;}
+.log_2015.login_area .login_box.idpw .mouse label {height:28px;margin:0;padding:0;line-height: 28px;}
+
+/****************************** login_area ***************************************/
+
+/* .log_2015.login_area a, .log_2015.login_area label{font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;}
+.log_2015 .noti_2015 {clear:both;padding-top:30px;}
+.log_2015 .noti_2015 .comment {padding:1px 0;padding-left:10px;background: url(https://oimg1.kbstar.com/img/ocommon/2015/bl_gry.png) 0 50% no-repeat;font-size:14px;font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;}
+.log_2015 .noti_2015 .comment strong {color:#8a593c;}
+.log_2015.login_area {width:880px;height:auto;margin:30px auto 0;padding:0;overflow:hidden;background:none;}
+.log_2015.login_area .cert_area {position:relative;float:left;width:440px;padding-bottom:36px;border-right: 1px solid #e5e5e5;}
+.log_2015.login_area .cert_area h2, .log_2015.login_area .idpw_area h2 {height:auto;padding:0;}
+.log_2015.login_area .cert_area .login_box.cert {margin: 22px 0 0 0;background:none;width:auto;height:auto;}
+.log_2015.login_area .cert_area .cert_btn {overflow: hidden;margin:0;text-align:left;font-size:0;line-height:0;}
+.log_2015.login_area .cert_area .login_box.cert .cert_btn * { _overflow: hidden;overflow: visible;display: inline-block;width:196px;height:81px;margin:0;border:none;color: #4e473f;font-weight: bold;font-size: 0;white-space: nowrap;text-decoration: none !important;
+  cursor: pointer; line-height:0; letter-spacing:0;background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/btn_login01.png) no-repeat;float:left;}
+.log_2015.login_area .cert_area .login_box.cert .cert_btn button span {width: 0;height: 0; text-indent:-9999px;text-shadow:none;background: none;}
+.log_2015.login_area .cert_area .login_box.cert .cert_btn a {display: inline-block;background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/btn_login02.png) no-repeat;margin-left:8px;text-indent:-9999px;}
+
+.log_2015.login_area .cert_area .setting_autopop {overflow: hidden;margin: 15px 0 16px;}
+.log_2015.login_area .cert_area .setting_autopop dt {float: left;padding: 7px 20px 6px 20px;width: 96px;font-size: 0;line-height:0; }
+.log_2015.login_area .cert_area .setting_autopop dd {float: left;clear: none;padding:3px 0 5px;}
+
+.log_2015.login_area .link_certCenter {position:absolute;left:0;bottom:0;overflow:hidden;width:398px;padding:7px 0 7px 0;border:1px solid #c6bfb4;background:#fffef9;}
+.log_2015.login_area .link_certCenter li {float:left;padding-left:13px;margin-left:14px;text-align:center;border-left:1px solid #c4c3bf;}
+.log_2015.login_area .link_certCenter li:first-child {border:none;margin:0 !important;}
+.log_2015.login_area .link_certCenter li a {display:block;padding:0 0 2px 0;font-size:13px;line-height:18px;background:none;letter-spacing:0;}
+.log_2015.login_area #idSearchDiv.link_certCenter li { margin-left: 26px; padding-left: 22px; }
+.log_2015.login_area #idSearchDiv.link_certCenter li.first { margin-left: 0; }
+
+
+
+
+
+.log_2015.login_area .login_box.idpw .link_certCenter {left:39px;right:0 !important; *bottom:3px;}
+
+.log_2015.login_area .cert_area .cert_btn_bw {overflow: hidden;margin:0;text-align:left;font-size:0;line-height:0;}
+.log_2015.login_area .cert_area .login_box.cert .cert_btn_bw * { _overflow: hidden;overflow: visible;display: inline-block;width:196px;height:61px;margin:0;border:none;color: #4e473f;font-weight: bold;font-size: 0;white-space: nowrap;text-decoration: none !important;
+  cursor: pointer; line-height:0; letter-spacing:0;background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/btn_login03.png) no-repeat;float:left;}
+.log_2015.login_area .cert_area .login_box.cert .cert_btn_bw button span{width: 0;height: 0; text-indent:-9999px;text-shadow:none;background: none;}
+.log_2015.login_area .cert_area .login_box.cert .cert_btn_bw a.btn_certCenter {display: inline-block;background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/btn_login04.png) no-repeat;margin-left:8px;text-indent:-9999px;}
+.log_2015.login_area .cert_area .login_box.cert .cert_btn_bw .btn_cert.s1 {height:37px; margin-top: 6px;background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/btn_login05.png) no-repeat;}
+.log_2015.login_area .cert_area .login_box.cert .cert_btn_bw a.btn_certCenter.s1{height:37px; margin-top: 6px;background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/btn_login06.png) no-repeat;}
+
+
+.log_2015.login_area .idpw_area {position:relative;float:left;width:400px;padding:0 0 36px 39px;}
+.log_2015.login_area .idpw_area .login_box.idpw {overflow:hidden;height:auto;width:auto;margin-top:20px;background:none;}
+.log_2015.login_area .idpw_area .login_box.idpw fieldset {overflow:hidden;position:relative;  bottom: inherit;top:0;left:0;width:400px;padding:0;}
+.log_2015.login_area .login_box.idpw fieldset label {width:93px;height:36px;padding:0;margin-bottom:9px;font-size:14px;color:#555;font-weight:bold;line-height:36px;}
+.log_2015.login_area .login_box.idpw fieldset label:last-child {min-width:100px;}
+.log_2015.login_area .login_box.idpw fieldset input[type="text"], .log_2015.login_area .login_box.idpw fieldset input[type="password"] {width:171px;margin-bottom:9px;*margin-bottom:8px;*margin-top:-1px;height: 28px;vertical-align:top;font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;}
+.log_2015.login_area .login_box.idpw fieldset .login {position: absolute; top: 0; right: 0; width:120px; height:81px; font-size:0;line-height:0;border: none; cursor: pointer; background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/btn_login07.png) no-repeat;text-indent:-9999px;} */
+
+/*로그인에러시*/
+/* .log_2015.login_area .login_box{background: none}
+.log_2015.login_area .idpw_area .login_box.idpw1 {overflow: hidden; height: auto; width: auto; margin-top: 20px;background: none;}
+.log_2015.login_area .login_box.idpw1 fieldset{overflow:hidden;position:relative;  bottom: inherit;top:0;left:0;width:400px;padding:0;}
+.log_2015.login_area .login_box.idpw1 fieldset label{width:93px;height:36px;padding:0;margin-bottom:9px;font-size:14px;color:#555;font-weight:bold;line-height:36px;}
+.log_2015.login_area .login_box.idpw1 fieldset input[type="text"], .log_2015.login_area .login_box.idpw1 fieldset input[type="password"] {width:171px;margin-bottom:9px;*margin-bottom:8px;*margin-top:-1px;height: 28px;vertical-align:top}
+.log_2015.login_area .login_box.idpw1 fieldset .login{position: absolute; top: 0; right: 0; width:120px; height:81px; font-size:0;line-height:0;border: none; cursor: pointer; background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/btn_login07.png) no-repeat;text-indent:-9999px;}
+.log_2015.login_area .login_box.idpw1 fieldset .login span{width:100%;height:100%;font-size:14px;font-weight:bold;text-shadow:1px 1px 0 #ffe79b;filter:dropshadow(color=#ffe79b,offx=0,offy=1,positive=1);background:none}
+.log_2015.login_area .login_box.idpw1 .mouse{margin:-5px 0 18px 93px;}
+.log_2015.login_area .login_box.idpw1 .mouse label{height:28px;margin:0;padding:0;line-height: 28px;}
+
+
+
+.log_2015.login_area .login_box.idpw .mouse {margin:6px 0 18px 93px;}
+.log_2015.login_area .login_box.idpw .mouse label {height:28px;margin:0;padding:0;line-height: 28px;} */
+
+.log_2015 .caution, .log_2015 .caution3 { margin-left:93px}
+.log_2015 .idpw_area.login2 {min-height:207px;}
+.log_2015 .idpw_area.login2 .login_box.idpw .link_certCenter {*bottom:0px;}
+
+.log_2015 input[type="text"], .log_2015 input[type="password"] {width:171px;height:28px;border:1px solid #d5d5d5;padding:3px 0 3px 9px;font-size:16px;line-height:28px;}
+
+
+.log_2015.login_area .cert_area .login_box.idpw {overflow:hidden;height:auto;width:auto;margin-top:20px;background:none;}
+.log_2015.login_area .cert_area .login_box.idpw fieldset {overflow:hidden;position:relative;  bottom: inherit;top:0;left:0;width:400px;padding:0;}
+.log_2015.login_area .cert_area .login_box.idpw .link_certCenter {left:0px !important;}
+
+
+/***************로그인 공인인증서/id****************/
+.log_2015 .ad_bizlogin {position:relative;float:left;width:400px;padding:0 0 0 39px;margin:0;}
+.log_2015 .ad_bizlogin .btn_more {position:absolute;right:0;top:0;display:inline-block;width:85px;padding:1px 0 2px;border:1px solid #c6bfb4;background:#fff;font-size:13px;color:#555;text-align:center;line-height:21px;}
+.log_2015 .ad_bizlogin .browser {width:400px;height:177px;margin-top:20px;background:#fafaf9 url(https://oimg1.kbstar.com/img/ocommon/2015/login/bg_browser.png) no-repeat 50% 40px;}
+.log_2015 .ad_bizlogin .browser p {padding-top:90px;font-size:15px;text-align:center;line-height:22px;}
+
+/***************기업인터넷 뱅킹로그인 ****************/
+.log_2015 .comArea {position:relative;float:left;width:400px;padding:0 0 0 39px;}
+.log_2015 .comArea .btn_more {position:absolute;right:0;top:0;display:inline-block;width:85px;padding:1px 0 2px;border:1px solid #c6bfb4;background:#fff;font-size:13px;color:#555;text-align:center;line-height:21px;}
+.log_2015 .comArea dl {width:365px;height:169px;padding:8px 0 0 35px;margin-top:20px;background:#fafaf9;}
+.log_2015 .comArea dl dt {padding-top:10px;color:#333;font-size:16px;font-weight:bold;}
+.log_2015 .comArea dl dd {color:#666;font-size:13px;line-height:18px;}
+
+
+/*************** 다국어  ****************/
+
+.log_2015.eng .cert_area .login_box.cert .cert_btn * {background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/btn_login08.png) no-repeat !important;}
+.log_2015.eng .cert_area .login_box.cert .cert_btn a {background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/btn_login09.png) no-repeat !important;}
+.log_2015.eng .idpw_area .login_box.idpw {margin-top:15px ! important;}
+.log_2015.eng .login_box.idpw fieldset .login {background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/btn_login10.png) no-repeat !important;}
+.log_2015.eng .cert_area {height:163px !important;  padding-bottom:0 !important;}
+.log_2015.eng .cert_area .cert_btn {margin:0 !important}
+.log_2015.eng .cert_area .setting_autopop dt {padding: 3px 20px 6px 0;width:211px !important;}
+.log_2015.eng .cert_area .login_box.cert {margin-top:15px ! important;}
+.log_2015.eng .login_box.idpw fieldset label {font-weight: bold !important;}
+.log_2015.eng .login_box.idpw .mouse {margin: 0 0 0 93px !important;}
+.log_2015.eng .login_box.idpw .mouse input + label {width:130px;}
+.log_2015.eng .idpw_area { position: relative; padding: 0 0 0 39px;height:163px}
+.log_2015.eng .cert_area .setting_autopop {margin: 15px 0 0;}
+
+.log_2015.eng .inner_bizlogin {margin-top:40px;padding:0 0 0 85px;background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/bg_ad_bizlogin.png) no-repeat;font-family:'맑은고딕',Malgun Gothic;}
+.log_2015.eng .inner_bizlogin strong {font-size:19px;color:#333;line-height:22px}
+.log_2015.eng .inner_bizlogin p {font-size:15px;color:#333;}
+.log_2015.eng .inner_bizlogin a {display:inline-block;margin-top:10px;width:65px;background:#fffef9;border:1px solid #c6bfb4;font-size:13px;color:#555;text-align:center;line-height:24px}
+
+
+.log_2015.chn .cert_area .login_box.cert .cert_btn * {background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/btn_login11.png) no-repeat !important;}
+.log_2015.chn .cert_area .login_box.cert .cert_btn a {background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/btn_login12.png) no-repeat !important;}
+.log_2015.chn .idpw_area .login_box.idpw {margin-top:15px ! important;}
+.log_2015.chn .login_box.idpw fieldset .login {background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/btn_login13.png) no-repeat !important;}
+.log_2015.chn .cert_area {height:163px !important;  padding-bottom:0 !important;}
+.log_2015.chn .cert_area .cert_btn {margin:0 !important}
+.log_2015.chn .cert_area .setting_autopop dt {padding: 3px 20px 6px 0;width:120px !important;}
+.log_2015.chn .cert_area .login_box.cert {margin-top:15px ! important;}
+.log_2015.chn .login_box.idpw fieldset label {font-weight: bold !important;}
+.log_2015.chn .login_box.idpw .mouse {margin: 0 0 0 93px !important;}
+.log_2015.chn .login_box.idpw .mouse input + label {width:130px;}
+.log_2015.chn .idpw_area { position: relative; padding: 0 0 0 39px;height:163px}
+.log_2015.chn .cert_area .setting_autopop {margin: 15px 0 0;}
+
+.log_2015.chn .inner_bizlogin {margin-top:40px;padding:0 0 0 85px;background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/bg_ad_bizlogin.png) no-repeat;font-family:'맑은고딕',Malgun Gothic;}
+.log_2015.chn .inner_bizlogin strong {font-size:19px;color:#333;line-height:22px}
+.log_2015.chn .inner_bizlogin p {font-size:15px;color:#333;}
+.log_2015.chn .inner_bizlogin a {display:inline-block;margin-top:10px;width:65px;background:#fffef9;border:1px solid #c6bfb4;font-size:13px;color:#555;text-align:center;line-height:24px}
+
+
+.log_2015.jpn .cert_area .login_box.cert .cert_btn * {background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/btn_login14.png) no-repeat !important;}
+.log_2015.jpn .cert_area .login_box.cert .cert_btn a {background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/btn_login15.png) no-repeat !important;}
+.log_2015.jpn .idpw_area .login_box.idpw {margin-top:15px ! important;}
+.log_2015.jpn .login_box.idpw fieldset .login {background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/btn_login16.png) no-repeat !important;}
+.log_2015.jpn .cert_area {height:163px !important;  padding-bottom:0 !important;}
+.log_2015.jpn .cert_area .cert_btn {margin:0 !important}
+.log_2015.jpn .cert_area .setting_autopop dt {padding: 3px 20px 6px 0;width:165px !important;}
+.log_2015.jpn .cert_area .login_box.cert {margin-top:15px ! important;}
+.log_2015.jpn .login_box.idpw fieldset label {font-weight: bold !important;}
+.log_2015.jpn .login_box.idpw .mouse {margin: 0 0 0 93px !important;}
+.log_2015.jpn .login_box.idpw .mouse input + label {width:130px;}
+.log_2015.jpn .idpw_area { position: relative; padding: 0 0 0 39px;height:163px}
+.log_2015.jpn .cert_area .setting_autopop {margin: 15px 0 0;}
+
+.log_2015.jpn .inner_bizlogin {margin-top:40px;padding:0 0 0 85px;background: url(https://oimg1.kbstar.com/img/ocommon/2015/login/bg_ad_bizlogin.png) no-repeat;font-family:'맑은고딕',Malgun Gothic;}
+.log_2015.jpn .inner_bizlogin strong {font-size:19px;color:#333;line-height:22px}
+.log_2015.jpn .inner_bizlogin p {font-size:15px;color:#333;}
+.log_2015.jpn .inner_bizlogin a {display:inline-block;margin-top:10px;width:65px;background:#fffef9;border:1px solid #c6bfb4;font-size:13px;color:#555;text-align:center;line-height:24px}
+
+
+
+.bottom_area .btmService ,.bottom_area .btmGuide, .bottom_area .btmFaq{height:122px;padding-left:20px;padding-top:5px;border-right: 1px solid #eaeaea;}
+.bottom_area {width:980px;margin:100px auto 0;background:none;}
+.bottom_area .btmService {width:241px;padding-right:20px}
+.bottom_area .btmService .relationService li {background:url(https://oimg1.kbstar.com/img/ocommon/2015/bl_gry.png) 0 10px no-repeat;}
+.bottom_area .btmService .relationService li a {font-size:14px;line-height:20px;font-family:'맑은고딕',Malgun Gothic;}
+.bottom_area .btmGuide {width:343px;  background-position: 265px 33px;}
+.bottom_area .btmGuide p {width:240px;font-size:14px;font-family:'맑은고딕',Malgun Gothic;}
+.bottom_area .btmFaq {float:left;width:310px;height: auto;padding-left:20px;border:none;}
+.bottom_area .btmFaq .faqList li {background:url(https://oimg1.kbstar.com/img/ocommon/2015/bl_gry.png) 0 10px no-repeat;}
+.bottom_area .btmFaq .faqList li a {padding: 1px 0 0 10px;background:none;font-size:14px;line-height:24px;}
+
+#RENO_2015 .headerWrap{background:none}
+#RENO_2015 #HEADER{background:none}
+
+#RENO_2015 #HEADER.other_lang {background: none !important}
+
+/* 아이디,사용자 암호 안내 layer (2016-10-21) */
+.log_2015.login_area{position:relative;}
+.login_box .btn-q{position:absolute;left:71px;top:55px}
+
+.layer-ballon{position:absolute;padding-top:8px;}
+.layer-ballon .arr{position:absolute;left:72px;top:0;display:inline-block;width:18px;height:10px;background:url('https://oimg1.kbstar.com/img/ocommon/2015/login/bg_balloon_top.png') no-repeat;}
+.layer-ballon .shadow{display:inline-block;padding:0 7px 7px 0;background:url('https://oimg1.kbstar.com/img/ocommon/2015/login/bg_balloon_shadow.png') no-repeat right bottom;}
+.layer-ballon .cont{background-color:#fffdec;border:2px solid #ffc000;display:inline-block;padding:20px;}
+.layer-ballon .btn-close{position:absolute;right:18px;top:19px}
+.layer-ballon .btn-close img{width:11px;height:auto;}
+
+.layer-idpwInfo{left:480px;top:127px}
+.layer-idpwInfo ul li{margin-top:10px;line-height:1.2;}
+.layer-idpwInfo ul li:first-child{margin-top:0;}
+.layer-idpwInfo ul li strong{float:left;width:80px;color:#756453;}
+.layer-idpwInfo ul li em{float:left;width:210px;padding-left:10px;border-left:1px solid #e3d4c7;color:#756453;}
+
+
+/*로그인영역-3타입(2017-08-04)*/
+.loginTabArea {background:url('https://oimg1.kbstar.com/img/ocommon/2017/login/bg_loginbox_wrap.png') repeat-x 0 0;overflow:hidden;min-width:942px}
+.loginTabArea .container {position:relative;width:880px;margin:0 auto;padding:0px 31px 50px; background:url('https://oimg1.kbstar.com/img/ocommon/2017/login/bg_loginbox_main.png') no-repeat 0 0;}
+
+.loginTab {position:relative; padding-top:73px; *zoom:1;border-top:1px solid #f8f5e1;}
+.loginTab:after {display:block; content:""; clear:both;}
+.loginTab li {float:left;}
+.loginTab li .atit {display:block; position:absolute; top:25px; height:49px; text-align:center; font-size:19px; color:#767676; letter-spacing:-1px; line-height:24px; border-bottom:4px solid #f4f2ed; font-family: '맑은 고딕', 'Malgun Gothic', sans-serif;}
+.loginTab li .atit:after {display:inline-block; *display:inline; *zoom:1; content:""; width:0; height:43px; vertical-align:middle;}
+.loginTab li.active .atit {font-weight:bold; color:#5b4d3e; border-bottom:3px solid #988068}
+.loginTab li .atit span {display:inline-block; *display:inline; *zoom:1; vertical-align:middle;}
+.loginTab li .atit .readonly {display:none;}
+.loginTab li.active .atit .readonly {display:inline}
+.loginTab li .tabCon {display:none;}
+.loginTab li.active .tabCon {display:block;}
+
+.loginTab > li:first-child .atit {left:30px; width:273px;}/*기본-3탭*/
+.loginTab > li:first-child + li .atit {left:303px; width:273px;}
+.loginTab > li:first-child + li + li .atit {left:576px; width:273px;}
+
+.loginTab.T2nd >  li:first-child .atit {left:30px; width:410px;}/*2탭*/
+.loginTab.T2nd >  li:first-child + li .atit {left:440px; width:410px;}
+
+.loginTab.T1st >  li .atit {left:30px !important; width:819px !important;}/*1탭*/
+.loginTab.T1st li.active .atit {font-weight:bold; color:#5b4d3e; border-bottom:3px solid #dcdcdc;color:#5d5d5d;}
+
+
+
+.loginTabArea .container .noti_2015 {padding-top:30px;margin:0 auto;width:630px;}/*탭하단 문구영역*/
+.loginTabArea .container .noti_2015 .comment {padding:1px 0;padding-left:10px;background: url(https://oimg1.kbstar.com/img/ocommon/2015/bl_gry.png) 0 50% no-repeat;font-size:14px;font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;}
+.loginTabArea .container .noti_2015 .comment strong {color:#8a593c;}
+
+/* 로그인영역-4타입 KB스타뱅킹 연동 로그인추가(2018-05-16) */
+#byStarbank .simpleCert p{font-size:16.4px;letter-spacing:-1px;}
+#byStarbank .simpleCert .link_certCenter li{width:100%;}
+
+.loginTab.T4th > li .atit {width:205px !important;font-size:18.5px !important}/* 4탭 */
+.loginTab.T4th > li:first-child .atit {left:30px;}
+.loginTab.T4th > li:first-child+li .atit {left:235px;}
+.loginTab.T4th > li:first-child+li+li .atit {left:440px;}
+.loginTab.T4th > li:first-child+li+li+li .atit {left:645px;}
+
+/* KB든든간편인증 -> 기타로그인방법 으로 수정(2018-07-03) */
+.log_2015.login_area .simpleCert2 {position:relative; width:680px; margin:0 auto 5px; padding-top:26px;}
+.log_2015.login_area .simpleCert2 *{overflow:hidden;}
+.log_2015.login_area .simpleCert2 p {margin-bottom:15px; font-size:15px; font-family:'맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif; letter-spacing:-1px;}
+.log_2015.login_area .simpleCert2 p strong{display:block;}
+.log_2015.login_area .simpleCert2 button {position:absolute; top:55px; right:0; width:140px; height:76px; font-size:0; line-height:0; border:none; cursor: pointer; text-indent:-9999px;}
+.log_2015.login_area .simpleCert2 .simple_login {background:url('https://oimg1.kbstar.com/img/ocommon/2015/login/btn_simple_login.png') no-repeat;}
+.log_2015.login_area .simpleCert2 .bank_login {background:url('https://oimg1.kbstar.com/img/ocommon/2015/login/btn_bank_login.png') no-repeat;}
+.log_2015.login_area .simpleCert2 .smart_login {background:url('https://oimg1.kbstar.com/img/ocommon/2015/login/btn_smart_login.png') no-repeat;}
+.log_2015.login_area .simpleCert2 .link_certCenter li {width:48%;}
+.log_2015.login_area .link_certCenter2 {position:static; left:0; bottom:0; overflow:hidden; width:190px; padding:9px 0 9px 0; border:1px solid #c6bfb4; background:#fffef9;}
+.log_2015.login_area .link_certCenter2 li {float:none; text-align:center;}
+.log_2015.login_area .link_certCenter2 li a {display:block; padding:0 0 2px 0; background:none; line-height:18px; letter-spacing:0; font-size:13px;}
+
+/* 아이디로그인 자동입력방지(2018-08-03) */
+.log_2015.login_area .idpw_area.ty2 {position:relative;float:none;width:430px;padding:0px;margin:0 auto;}
+.log_2015.login_area .idpw_area.ty2 .login_box.idpw fieldset {overflow:hidden;position:relative;  bottom: inherit;top:0;left:0;width:430px;padding:0;}
+.log_2015.login_area .idpw_area.ty2 .login_box.idpw {overflow:hidden;height:auto;width:auto;margin-top:20px;background:none;}
+.log_2015.login_area .idpw_area.ty2 .login_box.idpw fieldset label {width:100px;height:36px;padding:0;margin-bottom:9px;font-size:14px;color:#555;font-weight:bold;line-height:36px;*letter-spacing:-1px}
+.log_2015.login_area .idpw_area.ty2 .login_box.idpw fieldset .login {clear:both;position: relative;width:430px;height:60px; font-size:0;line-height:0;border: none; cursor: pointer; background: url('https://oimg1.kbstar.com/img/ocommon/2017/login/btn_login08.png') no-repeat;text-indent:-9999px;margin-top:10px} /* 2018-10-10 */
+.log_2015.login_area .idpw_area.ty2 .login_box.idpw fieldset input[type="text"], .log_2015.login_area .idpw_area.ty2 .login_box.idpw fieldset input[type="password"]{width:319px;margin-bottom:9px;*margin-bottom:8px;*margin-top:-1px;height: 32px;vertical-align:top;font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;}
+.log_2015.login_area .idpw_area.ty2 .login_box.idpw .mouse {margin:0 0 0 100px;}
+.log_2015.login_area .idpw_area.ty2 .login_box.idpw .mouse input{width:18px;margin-top:2px;margin-bottom:5px} /* 2018-10-10 */
+.log_2015.login_area .idpw_area.ty2 .login_box.idpw .mouse label {height:28px;margin:0;padding:0;font-family:dotum;font-size:12px;line-height: 28px;}
+
+.input_protection{clear:both;margin-top:25px;}
+.input_protection .txt{color:#333;font-size:14px;font-weight:bold;margin-bottom:10px}
+.input_protection .autonumbox{float:left;width:226px;margin-right:20px;height:70px;background:#f4f4f4}
+.input_protection .autonumbox p{color:#333;font-size:34px;font-weight:bold;font-style:italic;line-height:70px;letter-spacing:1px;text-align:center}
+.input_protection .inputnumbox{float:left;width:184px;margin-bottom:12px}
+.input_protection .inputnumbox input[type="text"]{width:173px !important;font-size:12px;font-weight:normal;}
+.input_protection .inputnumbox .numbtn li {margin-bottom:10px;padding-left:15px;background:url(https://oimg1.kbstar.com/img/ocommon/2017/login/login_ic_bar.png) no-repeat left 5px}
+.input_protection .inputnumbox .numbtn li:first-child {padding-left:0;background:none}
+.input_protection .inputnumbox .numbtn .btn_refresh{display:block;width:60px;padding-left:26px;color:#222;background:url(https://oimg1.kbstar.com/img/ocommon/2017/login/btn_login_ic01.png)  0 1px no-repeat}
+.input_protection .inputnumbox .numbtn .btn_voice{display:block;width:50px;padding-left:26px;color:#222;background:url(https://oimg1.kbstar.com/img/ocommon/2017/login/btn_login_ic02.png)   0 1px  no-repeat}
+.input_protection .inputnumbox label{display:none !important}
+
+.log_2015.login_area .idpw_area.ty2 .link_certCenter {position:static;left:0;bottom:0;overflow:hidden;width:428px;margin-top:10px;padding:9px 0 9px 0;border:1px solid #c3bfb3;background:#fffefa;}
+.log_2015.login_area .idpw_area.ty2 .link_certCenter li {float:left;width:auto;padding:0 30px;margin-left:0px;text-align:center;border-left:1px solid #c3bfb3;}
+.log_2015.login_area .idpw_area.ty2 .link_certCenter li:first-child {border-left:none;margin:0 !important;}
+.log_2015.login_area .idpw_area.ty2 .link_certCenter li a {display:block;padding:0 0 2px 0;font-size:12px;color:#6e6060;line-height:18px;background:none;letter-spacing:0;}
+
+

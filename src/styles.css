@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background-color: #eef2f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 380px;
+    text-align: center;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0077cc;
+    margin-bottom: 24px;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .login-form button:hover {
+    background-color: #005fa3;
+  }
+  
+  .toast {
+    margin-top: 12px;
+    background-color: #fce4e4;
+    color: #d8000c;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .preview {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #555;
+  }
+  
+  .loading {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #0077cc;
+    animation: blink 1s infinite alternate;
+  }
+  
+  @keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0.4; }
+  }
+  

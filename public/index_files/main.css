@@ -1,0 +1,978 @@
+* {
+    box-sizing: border-box;
+    font-family: "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", "돋움", Dotum, DotumChe;
+}
+
+body {
+    font-size: 0px;
+    margin:0px;
+    height:100%;
+    text-align: center;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#00000000);
+    box-sizing: border-box;
+}
+
+.assistAlign {
+    width:100%;
+}
+
+#easyAuth {
+    position: relative;
+    display: block;
+    top: 100px;
+    top: calc(50% - 295px);
+    top: -moz-calc(50% - 295px);
+    top: -webkit-calc(50% - 295px);
+    width: 535px;
+    height: 590px;
+    /*margin: auto;*/
+    margin:5px auto 15px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #555555;
+    border-radius: 14px;
+}
+
+#easyAuth div.bottomBlock {
+    width: 535px;
+    height: 84px;
+    /*border-top: 2px solid #9B9B9B;*/
+    text-align: right;
+    padding: 0px 40px;
+}
+
+#easyAuth .bottomBlock div {
+    height: 15px;
+    color: #9B9B9B;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    float: left;
+    margin-top: 44px;
+}
+
+#easyAuthBody {
+    display:inline-block;
+    position: relative;
+    width: 535px;
+    height: 506px;
+    padding: 41px;
+    padding-bottom: 0px;
+}
+
+#easyAuthBody .titleBarBlock{
+    height: 26px;
+    text-align: left;
+    line-height: 26px;
+    color: #000;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#easyAuthBody .titleBarBlock > .dialogTitle {
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    color:#000;
+}
+
+#easyAuth button {
+    width: 87px;
+    height: 31px;
+    border: 1px solid #06c;
+    font-size: 15px;
+}
+
+/***** AuthBlock *****/
+#easyAuthBody .authBlock {
+    width: 452px;
+    font-size: 0px;
+}
+#easyAuthBody .authBlock div{
+    display: inline-block;
+}
+#easyAuthBody .authBlock div.marginBlock {
+    width: 452px;
+    height: 266px;
+}
+
+/***** Common in authBlock *****/
+#easyAuthBody .titleCommon {
+    width: 226px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    color: #4a4a4a;
+    border: 1px solid #d2d2d2;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#easyAuthBody .titleCommon.disabled, #easyAuthBody .titleCommon.selected {
+    cursor: default;
+}
+
+#easyAuthBody .telTitle.titleCommon {
+    border-right: 1px solid #355ace !important;
+}
+
+#easyAuthBody .selectableTitleBlock div.selected{
+    color: #fff;
+    border: 1px solid #355ace;
+    background-color: #355ace;
+}
+
+#easyAuthBody .selectableTitleBlock div{
+}
+
+#easyAuthBody .titleCommon div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#easyAuthBody .titleCommon.disabled {
+    color: #d2d2d2;
+    background-color: #efeff4;
+    border: 1px solid #ededf2;
+}
+
+#easyAuthBody .authBlock div.contentBody {
+    width: 452px;
+    position: relative;
+    /*height: 301px;*/
+    /*border: 1px solid #888;*/
+    border-top: 0px;
+    border-left: 1px solid #d2d2d2;
+    border-right: 1px solid #d2d2d2;
+}
+.telTitle {
+    border-left: 1px solid #e0e0d4;
+}
+
+/***** telBlock *****/
+#easyAuthBody .telBody .leftBlock {
+    width: 452px;
+    height: 266px;
+    padding-top: 50px;
+}
+
+#easyAuthBody .telBody .inputWrapper {
+    width: 171px;
+    height: 24px;
+    line-height: 24px;
+    vertical-align: middle;
+    margin-bottom: -2px;
+}
+#easyAuthBody .telBody .formWrapper > * {
+    display: block;
+}
+
+#easyAuthBody .telBody div.phoneWrapper {
+    margin-top: 18px;
+    /*background-color: #ededf2;*/
+    width: 322px;
+    height: 46px;
+}
+
+#easyAuthBody .telBody form {
+    margin: 0px;
+}
+
+#easyAuthBody .telBody .leftBlock .formWrapper {
+    display: block;
+    width: ;
+}
+
+#easyAuthBody .telBody .formLeft {
+    /*width: 171px;*/
+    /*margin-right: 9px;*/
+}
+
+#easyAuthBody .telBody .formRight {
+    margin-top: 20px;
+    vertical-align: bottom;
+}
+
+#easyAuthBody .telBody .leftBlock .formWrapper button {
+    width: 100px;
+    height: 36px;
+}
+
+
+#easyAuthBody .telBody div {
+    vertical-align: top;
+}
+
+#easyAuthBody .telNo input, #easyAuthBody .telNo input[type="tel"]:focus, #easyAuthBody .telNo select:focus {
+    /*border: 1px solid #2484e4;*/
+    outline: 0;
+}
+
+#easyAuthBody .telNo input, #easyAuthBody .telNo input[type="tel"], #easyAuthBody .telNo select {
+    width:66px;
+    height:26px;
+    line-height: 24px;
+    border: 1px solid #d1d3d4;
+    text-align: left;
+    color:#000;
+    font-size: 13px;
+    vertical-align: middle;
+    letter-spacing: 1px;
+}
+
+#easyAuthBody .telNo select {
+    /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#00000000);*/
+    width:95px;
+    padding: 0 31px 0 21px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    z-index: 2;
+    margin-right: 3px;
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    box-sizing: border-box;
+}
+#easyAuthBody .telNo select::-ms-expand {
+    display: none;
+}
+
+#easyAuthBody .telNo .selectWrapper {
+    position: relative;
+    background-color: #ededf2;
+    z-index: 1;
+}
+
+#easyAuthBody .telNo .selectWrapper:before {
+    content: "▼";
+    position: absolute;
+    display: block;
+    /*background-color: #000;*/
+    font-size: 12px;
+    color: #000;
+    width: 0px;
+    height: 0px;
+    right: 20px;
+    overflow: visible;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#easyAuthBody .telNo input, #easyAuthBody .telNo input[type="tel"] {
+    background-color: #ededf2;
+    padding: 0px 22px;
+    /*margin-left: 10px;*/
+    width: 94px;
+    border: none;
+}
+
+#easyAuthBody .telNo div.numberDash {
+    /*display: inline-block;*/
+    width: 8px;
+    height: 2px;
+    background-color: #939598;
+    margin: 0px 4px 0px 6px;
+    vertical-align: middle;
+}
+
+#easyAuthBody .marginBlock .leftBlock.telCoOff .mainLabel {
+    margin-top: 6px;
+}
+
+#easyAuthBody .marginBlock .leftBlock.telCoOff .telCoWrapper {
+    display: none;
+}
+
+#easyAuthBody .marginBlock .leftBlock.telCoOff .phoneWrapper input , #easyAuthBody .marginBlock .leftBlock.telCoOff .phoneWrapper, #easyAuthBody .marginBlock .leftBlock.telCoOff .phoneWrapper select{
+    height: 46px;
+    line-height: 44px;
+}
+#easyAuthBody .marginBlock .leftBlock.telCoOff .phoneWrapper select, #easyAuthBody .marginBlock .leftBlock.telCoOff .phoneWrapper input {
+    font-size: 20px;
+}
+
+#easyAuthBody .marginBlock .leftBlock.telCoOff .phoneWrapper select, #easyAuthBody .marginBlock .leftBlock.telCoOff .phoneWrapper option {
+    padding: auto 0;
+}
+
+/*#easyAuthBody .telCoOff .telNo div.numberDash {
+    margin-top: 14px;
+}
+*/
+#easyAuthBody .marginBlock .leftBlock.telCoOff .saveNumberArea {
+    margin-top: 18px;
+}
+
+#easyAuthBody .telBody .saveNumberArea {
+    margin-top: 18px;
+    vertical-align: middle;
+    height:14px;
+    line-height:14px;
+}
+#easyAuthBody .telBody .saveNumberArea input {
+    font-size: 12px;
+    margin: 0px 5px;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+
+#easyAuthBody .telBody select:focus{outline:1px dotted #999}/* 2018-12-06 */
+#easyAuthBody .telBody .saveNumberArea input[type=checkbox]:focus+label {outline:1px dotted #999} /* 2018-12-06 */
+
+#easyAuthBody .telBody .saveNumberArea label{
+    font-size: 12px;
+    color: #6f6e70;
+    line-height: 15px;
+    height:15px;
+    vertical-align: middle;
+}
+#easyAuthBody .telBody div.telcoNotice {
+    font-size: 11px;
+    color: #808285;
+    text-align: left;
+}
+
+
+#easyAuthBody div.warningNotice {
+    position: absolute;
+    display: inline;
+    bottom: 0px;
+    left: 41px;
+    width: 452px;
+    height: 103px;
+    line-height: 101px;
+    /*border-top: 1px solid #d2d2d2;*/
+    font-size: 11px;
+    text-align: left;
+    color: #06c;
+    border: 1px solid #d2d2d2;
+    /*border-bottom: 0px;*/
+}
+
+#easyAuthBody .warningNotice *{
+    display: inline-block;
+    position: relative;
+    /*vertical-align: middle;*/
+}
+
+#easyAuthBody .warningNotice.hideMessage *{
+    display: none;
+    /*vertical-align: middle;*/
+}
+
+#easyAuthBody div.warningNotice.hideMessage {
+    border-top: 0px;
+}
+
+#easyAuthBody .warningNotice div.noticeLabel {
+    vertical-align: top;
+}
+
+#easyAuthBody .warningNotice .noticeLabel div.noticeDetail {
+    vertical-align: middle;
+    line-height: 16px;
+    font-size: 12px;
+    letter-spacing: -0.87px;
+    color: #4a4a4a;
+    height: 101px;
+    display: table-cell;
+    width: 378px;
+}
+#easyAuthBody .warningNotice .noticeLabel .noticeDetail img {
+    margin-top: 0px;
+    vertical-align: middle;
+}
+
+#easyAuthBody .warningNotice div.noticeApp {
+    padding: 27px 16px 0px 10px;
+    height: 101px;
+    line-height: initial;
+    text-align: center;
+    width: 72px;
+    box-sizing: border-box;
+}
+
+#easyAuthBody .warningNotice .noticeApp img {
+    display: block;
+    width: 46px;
+    height: 46px;
+}
+
+/*#easyAuthBody .warningNotice .noticeApp div {
+    display: block;
+    line-height: 11px;
+    text-align: center;
+    font-size: 9px; color: #4f3e2f;
+    white-space: nowrap;
+    float: left;
+}
+
+#easyAuthBody .marginBlock .rightBlock ul.appIconBody {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0px;
+}
+#easyAuthBody .marginBlock .rightBlock .appIconBody li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#easyAuthBody .marginBlock .rightBlock .appIconBody img {
+    display: inline-block;
+}
+#iconList1, #iconList2{
+    width: 67px;
+    height: 73px;
+    padding: 0px;
+    overflow: hidden;
+    position: relative;
+}
+#iconList1 *,#iconList2 * {
+    display: block;
+}
+.iconListApp {
+    height: 53px;
+}
+.iconListApp img {
+    width: 53px;
+    height: 53px;
+}
+#easyAuthBody .marginBlock .rightBlock div.iconLabel {
+    font-size: 12px;
+    margin-top: 4px;
+    line-height: 12px;
+    color: #58595b;
+}
+#easyAuthBody .marginBlock .rightBlock li.arrow {
+    width: 13px;
+    height: 21px;
+    margin-top: 16px;
+    line-height: 21px;
+    overflow: hidden;
+}
+
+#easyAuthBody .marginBlock .rightBlock .arrow img{
+    margin-top: 4px;
+}
+#leftArrow1, #leftArrow2, #rightArrow1, #rightArrow2 {
+    cursor: pointer;
+}
+ul {
+    padding: 0px;
+}
+.iconScroll li {
+    display: inline-block;
+    padding: 3px 3px;
+    cursor: pointer;
+}
+
+#easyAuthBody .marginBlock .rightBlock .iconScroll .circleButton{
+    width: 7px;
+    height: 7px;
+    border-radius: 3.5px;
+    background-color: #d1d3d4;
+}
+#easyAuthBody .marginBlock .rightBlock .iconScroll .current{
+    background-color: #2484e4;
+}*/
+/***** qrcodeBlock *****/
+
+#easyAuthBody .qrBody div {
+    vertical-align: top;
+}
+
+#easyAuthBody .qrBody div.leftBlock {
+    margin-top: 28px;
+    margin-bottom: 31px;
+    vertical-align: top;
+    width: 313px;
+    height: 131px;
+    padding: 16px 46px;
+    /*padding-top:3px;*/
+    /*background-color: #ededf2;*/
+    /*border-right: 1px solid #eee;*/
+}
+
+#easyAuthBody .qrBody div.qrImage {
+    vertical-align: bottom;
+    /*margin: 6px;*/
+    width: 92px;
+    height: 92px;
+}
+
+#easyAuthBody .qrBody .upperInfo {
+    margin-top: 44px;
+}
+
+#easyAuthBody .qrBody .leftBlock .innerArea {
+    width: 98px;
+    height: 98px;
+    padding: 3px;
+    background-color: #fff;
+    text-align: left;
+}
+
+#easyAuthBody .qrBody .leftBlock .leftArea {
+    float: left;
+}
+
+#easyAuthBody .qrBody .leftBlock .rightArea {
+    float: right;
+}
+
+/*#easyAuthBody .qrBody .leftBlock div.commonLabel {
+    font-size: 14px;
+    color: #58595b;
+    font-weight: bold;
+    line-height: 14px;
+    margin-bottom: 6px;
+}*/
+
+#easyAuthBody .qrBody .leftBlock div.authcodeArea {
+    width: 92px;
+    height: 92px;
+    line-height: 92px;
+    font-size: 20px;
+    color: #000;
+    border: 2px dashed #808285;
+    text-align: center;
+}
+
+/*#easyAuthBody .qrBody .marginBlock .rightBlock {
+    width: 125px;
+    height: 115px;
+    margin-top: 30px;
+}*/
+
+/***** cancelButton *****/
+
+#easyAuth .cancelButton {
+    border: 1px solid #b3b3b3;
+    background-color: #fff;
+    color: #666;
+    margin: 33px auto 19px auto;
+}
+
+
+
+.contentBody {
+}
+
+
+/*#easyAuthBody .processBody {
+    border: 1px solid #b3b3b3;
+    position: relative;
+    bottom: 0px;
+    font-size: 0px;
+    height: 261px;
+}
+#easyAuthBody .processBody div {
+    display: inline-block;
+}
+*/
+#easyAuthBody div.timeBlockWrapper {
+    width: 452px;
+    position: absolute;
+    display: block;
+    text-align: right;
+}
+#easyAuthBody div.timeBlock{
+    width: 75px;
+    height: 21px;
+    line-height: 21px;
+    /*border-radius: 10px;*/
+    /*background-color: #ededf2;*/
+    text-align: center;
+    margin: 18px 9px 0px 0px;
+}
+
+#easyAuthBody .timeBlock div {
+    right: 0px;
+    display: inline-block;
+}
+#easyAuthBody .timeBlock .timeImage{
+    margin-right: 6px;
+    width:20px; height:20px;
+    vertical-align: middle;
+    background-image: url(../img/ic_watch.png);
+}
+
+/*#easyAuthBody div.timeBlock img {
+    width: 20px;
+    height: 20px;
+}*/
+
+#easyAuthBody .timeBlock .timeWrapper div{
+    display: inline-block;
+    font-size: 14px;
+    color:#414042;
+    line-height: 17px;
+    vertical-align: middle;
+}
+
+#easyAuthBody .confirmCode > div, #easyAuthBody .progressAuth > div, #easyAuthBody .runManually > div {
+    display: block;
+}
+
+/*#easyAuthBody .processBody div.progressAuth {
+    margin-top: 29px;
+    margin-bottom: 35px;
+}*/
+
+#easyAuthBody .processBody .confirmCode .upperInfo {
+    margin-top: 64px;
+    height: 43px;
+}
+
+#easyAuthBody .processBody .confirmCode .upperInfo {
+    margin-top: 102px;
+}
+
+#easyAuthBody .processBody .confirmCode .upperInfo {
+    margin-top: 64px;
+}
+
+#easyAuthBody .processBody .confirmCode .upperInfo {
+    margin-top: 64px;
+}
+
+#easyAuthBody .processBody div.notificationImage{
+    width: 151px;
+    height: 48px;
+    background-image: url('../img/notification.png');
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+#easyAuthBody .processBody div.confirmCodeDiv {
+    white-space: nowrap;
+    font-size: 0px;
+    margin: 20px auto 0px auto;
+    width: 144px;
+    height: 46px;
+    background-color: #ededf2;
+}
+#easyAuthBody .processBody .confirmCodeDiv div.codeParsedDiv{
+    width: 18px;
+    height: 46px;
+    background: none;
+    border-radius: 2px;
+    font-size: 22px;
+    line-height: 46px;
+    color: #414042;
+}
+#easyAuthBody .processBody div.retryConfirmCode {
+    margin-top: 19px;
+    font-size: 14px;
+    color: #333232;
+    font-weight: bold;
+    font-weight: 700;
+}
+#easyAuthBody .processBody div.retryConfirmCode.disabled {
+    color: #aaa9a9;
+    font-weight: bold;
+    font-weight: 700;
+}
+
+#easyAuthBody .processBody div.retryConfirmCode a {
+    text-decoration: underline;
+    font-weight: normal;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+#easyAuthBody .processBody div.retryConfirmCode.disabled a {
+    cursor: not-allowed;
+}
+
+#easyAuthBody .processBody div.retryConfirmCode div.retryArrow {
+    background-image: url('../img/ic_Line.png');
+    width: 8px;
+    height: 13px;
+}
+#easyAuthBody .processBody div.retryConfirmCode.disabled div.retryArrow {
+    background-image: none;
+}
+
+/*#easyAuthBody .processBody .progressAuth, #easyAuthBody .processBody .runManually {
+    margin: 25px 0px 36px 0px;
+}*/
+#easyAuthBody .processBody .progressAuth {
+    margin-top: 99px;
+}
+
+#easyAuthBody .processBody .progressAuth {
+    margin-top: 99px;
+}
+
+#easyAuthBody .processBody .progressAuth .progressImageGIF {
+    margin-top: 21px;
+}
+
+#easyAuthBody .processBody .progressAuth .progressImageGIF img {
+    width: 120px;
+    height: 15px;
+}
+
+#easyAuthBody .processBody .progressAuth, #easyAuthBody .processBody .runManually div.progressInfoConfirmCode{
+    line-height: 11px;
+    font-size: 11px;
+    color: #ed1c24;
+}
+
+#easyAuthBody .processBody .runManually div.progressInfoConfirmCode {
+    display: block;
+    text-align: center;
+    /*height: 11px;*/
+    margin-top: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2c2c2c;
+}
+
+#easyAuthBody .processBody .runManually div.upperInfo {
+    height: auto;
+    margin-top: 78px;
+    display: inline-block;
+}
+
+#easyAuthBody .processBody .runManually {
+    margin-bottom: 19px;
+}
+
+#easyAuthBody .processBody .progressImage {
+    width: 72px;
+    height: 68px;
+    background-image: url('../img/img_done.png');
+    margin: 38px auto 0px auto;
+    /*margin-top: 38px;*/
+}
+
+#easyAuthBody .processBody .runManually .progressImage {
+    background-image: url('../img/img_find.png');
+    margin: 27px auto 0px auto;
+    /*margin-top: 38px;*/
+}
+
+#easyAuthBody .processBody .progressPNG {
+    margin-bottom: 17px;
+}
+
+
+/*ForTest*/
+
+.qrImage {
+    background-image: url('../img/qr-sample.png');
+}
+
+#easyAuth button.blueButton {
+    background-color: #355ace;
+    color:#fff;
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: normal;
+    font-weight: 500;
+    /*border: 1px solid #0066cc;*/
+    padding: 0px 0px;
+    cursor: pointer;
+}
+
+#appListWrapper {
+    position: absolute;
+    top: 0px;
+    left: 1px;
+    margin-left: -1px;
+    width: 100%;
+    height: 100%;
+    z-index: 100020;
+    background-color: rgba(0,0,0,0.3);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#30000000,endColorstr=#30000000);
+}
+
+#appListWrapper div.appListBox {
+    position: relative;
+    display: inline-block;
+    top: 30px;
+    width: 388px;
+    height: 205px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #555555;
+    /*padding:12px;*/
+}
+#appListWrapper .appListBox div.appListTitleArea {
+    border-bottom: 1px solid #d1d3d4;
+    width: 100%;
+    height: 56px;
+    line-height: 55px;
+    /*padding: 9px;*/
+    text-align: left;
+}
+#appListWrapper .appListBox .appListTitleArea > img {
+    vertical-align: middle;
+    margin: 0px 9px 0px 13px;
+    display: inline-block;
+    width: 21px;
+}
+
+#appListWrapper .appListBox .appListTitleArea div.appListTitleDiv {
+    width: 85%;
+    font-size: 13px;
+    line-height: 15px;
+    height: 15px;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #06c;
+    letter-spacing: -1px;
+}
+#appListWrapper .appListBox .appListTitleArea div.closeButton{
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin-right: -2px;
+    margin-top: -2px;
+    text-align: center;
+    line-height: 16px;
+}
+#appListWrapper .appListBox .appListTitleArea .closeButton img{
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+}
+#appListWrapper .appListBox div.appListDetailArea {
+    margin : 15px 0px;
+    font-size: 13px;
+    color: #414042;
+}
+#listWrapper div.vendorList {
+    padding-top: 8px;
+    width: 73px;
+    height: 86px;
+    background-color: #fff;
+    /*padding: 5px;*/
+    transition: 0.3s;
+    border: 1px solid #e6e7e8;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#listWrapper div.vendorList:hover {
+    border: 1px solid #2484e4;
+}
+#listWrapper div.vendorList:active {
+    background-color: #e6f6ff;
+}
+#listWrapper div.vendorList.last {
+    margin-right: 0px;
+}
+
+#listWrapper .vendorList img {
+    width: 53px;
+    height: 53px;
+    margin-bottom: 5px
+}
+.vendorList div.activeWrapper {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #e6f6ff;
+}
+#listWrapper .vendorList div.appName {
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 12px;
+    color: #58595b;
+}
+
+#appListWrapper #listWrapper div#vendorListExample {
+    display:none;
+}
+
+#easyAuthBody .telBody div#checkUserLoadingWrapper, #easyAuthBody .qrBody div#checkQrLoadingWrapper {
+    position: absolute;
+    display: block;
+    margin-left: -1px;
+    width:452px;
+    height:266px;
+    line-height: 266px;
+    z-index: 100020;
+    background-color: rgba(0,0,0,0.3);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#30000000,endColorstr=#30000000);
+}
+
+#easyAuthBody .telBody #checkUserLoadingWrapper div.checkUserLoading, #easyAuthBody .qrBody #checkQrLoadingWrapper div.checkUserLoading {
+    width: 40px; height: 40px;
+    margin-top: 1px;
+    line-height: 40px;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+#easyAuthBody .telBody #checkUserLoadingWrapper .checkUserLoading img, #easyAuthBody .qrBody #checkQrLoadingWrapper .checkUserLoading img {
+    vertical-align: middle;
+}
+
+#easyAuthBody .upperInfo {
+    /*height: 24px;*/
+    line-height: 24px;
+    white-space: pre;
+}
+#easyAuthBody .upperInfo div.upperInfoIcon {
+    display: block;
+    float: left;
+    vertical-align: middle;
+    margin-right: 7px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    background-image: url('../img/ic_info.png');
+}
+#easyAuthBody .upperInfo span.upperInfoDetail {
+    letter-spacing: -0.56px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #333232;
+    font-weight: normal;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+#easyAuthBody .warningNotice span.embracedInfo {
+    color: #355ace;
+    font-weight: bold;
+    font-weight: 600;
+}
+
+#easyAuthBody .upperInfo .upperInfoDetail span.embracedInfo {
+    color: #355ace;
+    font-weight: bold;
+    font-weight: 600;
+}
+/*KB모바일인증서 연동 로그인 3/29*/
+#easyAuthBody .telBody .leftBlock div.kb_mo_cer_new{width:275px;margin:0 auto;}
+#easyAuthBody .telBody .leftBlock div.kb_mo_cer_new>dl.row{overflow:hidden; margin-bottom:13px; height:42px; border-radius:6px; border:1px solid #d6d6d6;}
+#easyAuthBody .telBody .leftBlock div.kb_mo_cer_new>dl.row dt{float:left; width:100px; line-height:40px; vertical-align:middle; padding-left:10px; text-align:left; margin:0;}
+#easyAuthBody .telBody .leftBlock div.kb_mo_cer_new>dl.row dd{float:left; width:170px; margin:0;}
+#easyAuthBody .telBody .leftBlock div.kb_mo_cer_new>dl.row label{font-size:12px;}
+#easyAuthBody .telBody .leftBlock div.kb_mo_cer_new>dl.row input{text-indent:10px; border:none; height:40px; line-height:40px; font-size:16px; background:#fff;}
+#easyAuthBody .telBody .leftBlock div.kb_mo_cer_new>dl.row input:focus{outline:0;background:#fff;}
+#easyAuthBody .telBody .leftBlock div.kb_mo_cer_new>dl.row input::placeholder{color:#999;font-size:14px;}
+
+/* 로그인 영역, footer 높이 개선 (220923) */
+.select_combo_box * {box-sizing:content-box;}
+.select_combo_box .phone_table {box-sizing:border-box;}
+.area-log .area4 > a {box-sizing:content-box;}
+.n_login.loginTab .btn_area .row.btn br {border:0 none !important;}

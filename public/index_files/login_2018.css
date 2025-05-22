@@ -1,0 +1,463 @@
+@charset "utf-8";
+
+/*--------------------------------------------------------------------------------
+	# 2018 인터넷뱅킹 리뉴얼
+---------------------------------------------------------------------------------*/
+#RENO_2015 .contentWrap {padding:0 !important;}
+#RENO_2015 #BOTTOM {margin-top:0;}
+#CP {max-width:100%;}
+#FOOTER_2015  * {font-family:'맑은 고딕', 'Malgun Gothic' !important; letter-spacing:-1.0px;}
+.foot_area_2015 .foot_info li:first-child a{padding-left:0 !important;}
+.foot_area_2015 .foot_info li a strong{font-weight:bold !important;}
+.errirMessageBox {padding:30px 0 0;}
+.errirMessageBox #errorDiv, #preBanner .errirMessageBox #errorDiv {margin:0 auto 60px;width:980px !important;}
+#preBanner .errirMessageBox #errorDiv .notiArea.error, #preBanner .errirMessageBox #errorDiv .serError, .errirMessageBox #errorDiv .notiArea.error, .errirMessageBox #errorDiv .serError {background-color:#fff !important;}
+.blind {display:block;height:0;}
+body.page-main #RENO_2015 .contentWrap {padding-bottom:0 !important;}
+
+iframe {height:0;}
+[class*=page-log] {margin:-30px 0 -0px;padding:50px 0;-webkit-transition:all 0.6s;-moz-transition:all 0.6s;-o-transition:all 0.6s;transition:all 0.6s;}
+[class*=page-log].bg0 {background-color:#e8e1d7;} /* 221122 KB모바일인증서 본인확인서비스 */
+[class*=page-log].bg1 {background-color:#fff4f6;} /*2021-12-01 KB마이데이터*/
+[class*=page-log].bg2 {background-color:#e1d3c6;}/* KB국민은행 */
+
+/* 기업로그인 bg color 재정의(221125) */
+#b033138 [class*=page-log].bg0{background-color:#fff4f6;} /* KB마이데이터*/
+#b033138 [class*=page-log].bg1{background-color:#e1d3c6;}/* KB국민은행 */
+
+.page-logout.bg0 {background-color:#faf4fe;} /*2021-12-01 KB마이데이터*/
+.page-login > .txt {margin:18px auto -19px;padding-left:9px;width:971px;}
+.page-login > .txt > li {position:relative;padding-bottom:8px;padding-left:10px;color:#595959;line-height:1.4;}
+.page-login > .txt > li:before {content:'';display:block;position:absolute;top:6px;left:1px;width:3px;height:3px;background:#8c754e;}
+.page-login > a {display:block;position:absolute;right:50%;margin:-31px -481px 0 0;padding:3px 6px 0;border:1px solid #bebebe;background:#f1f1f1;color:#222;}
+.area-log {position:relative;margin:0 auto;width:980px;height:615px;background:#fff;box-shadow:0 0 70px 1px rgba(0,0,0,0.08);}
+.area-log > a {display:block;position:absolute;top:36px;right:75px;z-index:3;width:84px;height:28px;border:1px solid #ccc;font-size:14px;line-height:28px;text-align:center;color:#929292;font-family:'맑은 고딕', 'Malgun Gothic' !important;}
+
+/* 마케팅영역*/
+.log-visual {position:relative;float:left;width:440px;height:615px;}
+.log-visual .slider {display:inline-block;padding-left:20px;vertical-align:top;*display:inline;*zoom:1;}
+.log-visual .slider > dd {position:absolute;top:0;right:0;}
+.log-visual .slider > dt, .log-visual .control {display:inline-block;padding-top:580px;vertical-align:top;line-height:1;*display:inline;*zoom:1;}
+.log-visual .slider > dt > a, .log-visual .control button {overflow:hidden;display:block;position:relative;z-index:2;padding-left:19px;width:0;height:22px;white-space:nowrap;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s;}
+.log-visual .slider > dt > a:before {content:'';display:block;position:absolute;top:7px;bottom:7px;left:5px;right:5px;border-radius:15px;background:#fff;}
+.log-visual .slider > dt > a.on {padding-left:32px;}
+.log-visual .control {position:relative;z-index:2;}
+.log-visual .control button {background:none;border:0;}
+.log-visual .control button:before {content:'';display:block;position:absolute;top:50%;left:50%;}
+.log-visual .control button.btn_stop:before {margin:-5px -5px;width:3px;height:10px;border-left:3px solid #fff;border-right:3px solid #fff;}
+.log-visual .control button.btn_play:before {margin:-5px -3px;border:5px solid transparent;border-left:7px solid #fff;}
+.log-visual .control button.off {display:none;}
+/* IE하위버전 */
+@media \screen\9 {
+	.log-visual .slider > dt > a {margin-right:10px;padding-left:7px;height:7px;background:#fff;}
+	.log-visual .slider > dt > a.on {padding-left:26px;}
+	.log-visual .control button {display:inline;width:9px;height:7px;vertical-align:top;zoom:1;}
+	.log-visual .control button.btn_stop {border-left:2px solid #fff;border-right:2px solid #fff;}
+	.log-visual .control button.btn_play {border:5px solid transparent;border-left:7px solid #fff;}
+}
+
+/* 탭버튼 */
+.area-log > .loginTab {float:right;position:relative;z-index:2;display:table;table-layout:fixed;padding:78px 75px 0;width:390px;border-top:0;*display:block;*text-align:center;}
+.area-log > .loginTab:after {display:none;}
+.area-log > .loginTab > li {float:none;display:table-cell;vertical-align:top;*display:inline;*zoom:1;*width:33%;}
+.area-log > .loginTab > li .atit {display:block;position:relative;left:0 !important;top:0;width:100% !important;height:auto;border-color:#e8e3dc;font-size:16px;font-family:'맑은 고딕', 'Malgun Gothic' !important;letter-spacing:0;color:#808080;*line-height:43px;}
+.area-log > .loginTab > li > .tabCon {position:absolute;top:142px;left:75px;right:75px;padding-top:30px;*text-align:left;}
+.area-log > .loginTab > li.active .atit {border-width:4px;border-color:#8d744b;color:#545046;font-weight:normal;}
+
+/* 버튼 */
+.area-log [class*='area'] > * {font-family:'맑은 고딕', 'Malgun Gothic' !important;}
+.area-log .area1 > .btn {display:block;width:100%;height:55px;background:#ffcf00 !important;font-size:18px;font-weight:700;color:#222;line-height:55px;text-align:center;}
+.area-log .area1 > .btn + .btn {margin-top:10px;}
+.area-log .area2 {overflow:hidden;margin-top:40px;height:79px;padding:0 18px;border-top:1px solid #e8e8e8;text-align:center;}
+.area-log .area2 > .btn {position:relative;padding:1px 0 0 29px;margin:0 17px;height:78px;font-size:16px;line-height:78px;color:#222;*padding-left:0;}
+.area-log .area2 > .btn:before {content:'';display:block;position:absolute;left:0;top:50%;margin:-12px 0;width:24px;height:24px;background:url('https://oimg1.kbstar.com/img/ocommon/2018/login/icon_set1.png') no-repeat 0 0;}
+.area-log .area2 > .btn.ic2 {padding-left:31px;margin-left:21px;}
+.area-log .area2 > .btn.ic2:before {background-position:-30px 0;}
+.area-log .area3 {overflow:hidden;height:45px;background:#f6f6f6;text-align:center;}
+.area-log .area3 > .btn {display:inline-block;position:relative;padding:11px 7px 11px 11px;font-size:14px;color:#767676;background:none;}
+.area-log .area3 > .btn:before {content:'';display:block;position:absolute;top:50%;left:0;margin:-8px 0;width:1px;height:16px;background:#c5c5c5;}
+.area-log .area3 > .btn:first-child:before {display:none;}
+.area-log .area4 {margin-top:7px;}
+.area-log .area4 > a {overflow:hidden;display:inline-block;position:relative;padding: 6px 22px 2px 10px;;height: 25px;border:1px solid #e2e2e2;background:#f1f1f1;font-size:13px;color:#222;vertical-align:top;*display:inline;*zoom:1;*padding-right:7px;margin-left: 2px;}
+.area-log .area4 > a:before, .area-log .area4 > a:after{content:'';display:block;position:absolute;top:50%;right:5px;margin: -6px 0;width:0;height:0;border:5px solid transparent;}
+.area-log .area4 > a:before {border-left-color:#8c754e;}
+.area-log .area4 > a:after {right:7px;border-left-color:#f1f1f1;}
+.area-log .area4 > a + a {margin-left:2px;}
+.area-log .area5 > button {display:block;width:100%;height:30px;background:#fff;border:1px solid #d3d3d3;font-size:14px;color:#767676;}
+.area-log .area5 > button + button {margin-top:5px;}
+.area-log .area5 > [class*='ic']:before {content:'';display:inline-block;width:15px;height:15px;margin:-3px 3px 0 0;background:url('https://oimg1.kbstar.com/img/ocommon/2018/login/icon_set1.png') no-repeat -90px -30px;vertical-align:middle;}
+.area-log .area5 > .ic2:before {background-position:-105px -30px;}
+.area-btn {margin:20px 0;text-align:center;}
+.area-btn > button {overflow:hidden;position:relative;display:inline-block;padding:0 14px;min-width:90px;height:35px;background:#ffd800;border:1px solid #ffd800;font-size:12px;line-height:33px;text-align:center;white-space:nowrap;vertical-align:middle;color:#222;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+
+/* 휴대폰연동 */
+.area-log .info * {font-family:'맑은 고딕', 'Malgun Gothic' !important;}
+.area-log .info > li {/* float:none; */position:relative;margin-top:30px;/* padding: 0 206px 30px 33px; */min-height: 100px;border-bottom:1px solid #e8e8e8;font-size:13px;line-height:19px;color:#5a5a5a;*padding-left:0;padding-left: 30px;}
+.area-log .info > li > button {position:absolute;top:0;right:0;width:180px;height:71px;border:0;background:#ffcf00;line-height:71px;font-size:16px;font-weight:700;color:#222;}
+
+.area-log .area4> button {position: relative;top:0;right:0;width:174px;height:35px;border:0;background:#ffcf00;line-height:35px;font-size: 14px;font-weight:600;color:#222;/* margin-left: 5px; */}
+.area-log .info > li:before {content:'';display:block;position:absolute;top:0;left:0;width:30px;height:30px;background:url('https://oimg1.kbstar.com/img/ocommon/2018/login/icon_set1.png') no-repeat -60px 0;}
+.area-log .info > li.ic2:before {background-position:-90px 0}
+.area-log .info > li.ic3:before {background-position:-120px 0}
+.area-log .info > li:first-child {margin-top:0;}
+.area-log .info > li > p{font-size: 15px; font-weight:bold;}
+
+/* 아이디로그인 */
+.area-log .form {position:relative;}
+.area-log .form legend {overflow:hidden;display:block;width:0;height:0;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);*zoom:1;}
+.area-log .form label {float:left;display:inline-block;position:relative;z-index:2;width:80px;line-height:38px;}
+.area-log .form label + .input {position:relative;z-index:3;padding:0;margin:0 0 10px -80px;width:380px;font-family:'맑은 고딕', 'Malgun Gothic' !important;font-size:14px;}
+.area-log .form .input {border-color:#d3d3d3;padding-left:8px !important;width:235px;height:36px;line-height:38px;}
+.area-log .form .input:focus {border-color:#ffd800;}
+.area-log .form .input::-webkit-input-placeholder {color:#919191;}
+.area-log .form .input::-moz-input-placeholder {color:#919191;}
+.area-log .form .input::-ms-input-placeholder {color:#919191;}
+.area-log .form .input::input-placeholder {color:#919191;}
+.area-log .form .login {display:block;width:100%;height:55px;background:#ffcf00;border:0;font-size:18px;font-weight:700;color:#222;line-height:55px;text-align:center;font-family:'맑은 고딕', 'Malgun Gothic' !important;}
+.area-log .form .mouse {margin:-9px 0 5px;}
+.area-log .form .mouse label {float:none;padding:0 16px 0 24px;width:auto;line-height:34px;font-family:'맑은 고딕', 'Malgun Gothic' !important;color:#222;cursor:pointer;}
+.area-log .form .mouse label:before, .area-log .form .mouse label:after {content:'';position:absolute;left:0;top:9px;display:block;}
+.area-log .form .mouse label:before {width:13px;height:13px;border:1px solid #b1b1b1;background:#fff;}
+.area-log .form .mouse input {width:10px;height:35px;margin:0 -13px 0 0;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);}
+.area-log .form .mouse input:checked + label:after {width:7px;height:3px;margin:4px 3px;border-left:2px solid #786e65;border-bottom:2px solid #786e65;-ms-transform:rotate(-45deg);-webkit-transform:rotate(-45deg);transform:rotate(-45deg);}
+.area-log .form .mouse input:focus + label:before {border-color:#ffd800;}
+.area-log .form input[type=checkbox]:focus+label{outline:1px dotted #999} /* 2018-12-06 */
+.area-log .form .con {position:relative;overflow:hidden;margin:0 0 20px;}
+.area-log .form .con .img {float:left;margin-bottom:10px;width:250px;min-height:65px;}
+.area-log .form .con .area5 {float:right;width:130px;}
+.area-log .form .con label {display:block;clear:both;width:100%;margin-bottom:-38px;}
+.area-log .form .con input {margin:0;}
+.area-log .form + .area3 {margin-top:19px;}
+.area-log .form + .area3 .btn {padding-left:17px;padding-right:15px;}
+.area-log #userNumber .caution {display:block;}
+
+/* IE하위버전 */
+@media screen and (min-width:0\0) and (min-resolution:.001dpcm){
+ .area-log .form label + .input {margin-left:0;width:280px}
+ .area-log .form .mouse {margin-left:84px;}
+ .area-log .form .con {margin-bottom:15px;}
+ .area-log .form .con label {margin-bottom:0;line-height:1.2;}
+ .area-log .form .con input {width:375px;}
+}
+@media \0screen\,screen\9 {
+ .area-log .form label + .input {margin-left:0;width:280px}
+ .area-log .form .mouse {margin-left:84px;}
+ .area-log .form .mouse label {padding-left:0;}
+ .area-log .form .mouse label:before, .area-log .form .mouse label:after {display:none;}
+ .area-log .form .mouse input {width:14px;margin:-5px 0 0 4px;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);}
+ .area-log .form .con {margin-bottom:15px;}
+ .area-log .form .con label {margin-bottom:0;line-height:1.2;}
+ .area-log .form .con input {width:375px;}
+}
+
+
+/* 메세지영역 */
+.area-log > .mes {float:right;position:relative;z-index:2;display:-webkit-box;display:-ms-flexbox;display:box;-webkit-box-pack:center;-moz-box-pack:center;box-pack:center;-webkit-box-orient:vertical;-moz-box-orient:vertical;box-orient:vertical;justify-content:center;-ms-flex-direction:column;padding:75px 75px 130px 75px;width:390px;height:410px;border-top:0;background:#fff;*text-align:center;}
+.area-log > .mes:before {content:'';display:block;margin:0 auto 44px;width:80px;height:82px;background:url('https://oimg1.kbstar.com/img/ocommon/2018/login/icon_set1.png') no-repeat 0 -30px;}
+.area-log > .mes > p {font-family:'맑은 고딕', 'Malgun Gothic' !important;font-size:14px;text-align:center;color:#555;}
+.area-log > .mes > p > strong {color:#222;font-weight:700;}
+.area-log > .mes > p > em {color:#0490b1;font-weight:700;}
+.area-log > .mes > p:first-child {margin-bottom:10px;font-size:26px;color:#000;}
+.area-log > .mes > p:first-child > strong {color:#5f584c;}
+.area-log > .mes .area1 {position:absolute;bottom:75px;left:75px;right:75px;}
+
+/* 로그아웃 배너추가 (2022-08-19) */
+.page-logout.bg0 .area-log .n_mes,
+.page-logout.bg0 .area-log .n_mes * {box-sizing:border-box;}
+.page-logout.bg0 .area-log .n_mes {display:block;width:540px;height:615px;padding:60px 0 0 0;}
+.page-logout.bg0 .area-log .n_mes:before {margin-bottom:22px;}
+.page-logout.bg0 .area-log .n_mes .area1 {position:static;margin:25px 60px 0;}
+.page-logout.bg0 .area-log .n_mes .area1 > .btn {height:50px;font-size:16px;line-height:50px;}
+.page-logout.bg0 .area-log .n_mes .banner {position:absolute;left:60px;right:60px;bottom:43px;height:90px;padding:17px 0 0 110px;border-top:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8;background:url(https://oimg1.kbstar.com/img/ocommon/2022/ico_logout_banner_221206.png) no-repeat 0 0;color:#4e473f;}
+.page-logout.bg0 .area-log .n_mes .banner a {font-weight:bold;color:#06809b;}
+
+/* 로그인 수정 (2022-08-26) */
+.loginTab.n_login {box-sizing:border-box;width:540px;height:100%;padding:0;}
+.loginTab.n_login * {box-sizing:border-box;}
+.loginTab.n_login li .atit {top:0;width:270px;height:58px !important;border-bottom:none;background-color:#FBF9F7;font-size:18px;font-weight:bold;line-height:58px;color:#929292;}
+.loginTab.n_login li.active .atit {background-color:#fff;font-weight:bold;}
+.loginTab.n_login .tabCon {position:absolute;left:0 !important;right:0 !important;top:58px !important;height:557px;padding-top:0 !important;}
+.loginTab.n_login .tabCon .txt {height:17px;margin:27px 0 19px 0;padding:0;font-size:0;background:url(https://oimg1.kbstar.com/img/ocommon/2022/img_certtabcont_tit_2212.png) no-repeat 50% 0;}
+.loginTab.n_login .form {margin-top:27px;padding:0 60px;}
+.loginTab.n_login .form label.hidden {width:0;height:0;font-size:0;text-indent:-9999px} /* 접근성반영(230510) */
+.loginTab.n_login .form label + .input {width:100%;height:42px;margin:0 0 6px 0;padding-left:14px !important;border-color:#d3d3d3;}
+.loginTab.n_login .form label + .input::placeholder {color:#919191;}
+.loginTab.n_login .form label + .input:last-of-type {margin-bottom:0;}
+.loginTab.n_login .form .mouse {margin:11px 0 0 0;}
+.loginTab.n_login .form .mouse input,
+.loginTab.n_login .form .mouse label {height:15px;}
+.loginTab.n_login .form .mouse label {line-height:1;}
+.loginTab.n_login .form .mouse label:before,
+.loginTab.n_login .form .mouse label:after {top:0;}
+.loginTab.n_login .desc {position:relative;text-align:center;font-size:0;}
+.loginTab.n_login .desc a {display:inline-block;position:relative;padding:10px 0; font-size:12px;color:#717171;}
+.loginTab.n_login .desc .noticePush {display:none;position:absolute;left:60px;right:60px;top:33px;padding:16px 20px;border:1px solid #bbb;background-color:#fff;text-align:left;z-index:2;}
+.loginTab.n_login .desc .noticePush .tit {font-weight:bold;color:#7b5639;}
+.loginTab.n_login .desc .noticePush .list {margin-top:3px;}
+.loginTab.n_login .desc .noticePush .list li {float:none;padding-left:14px;text-indent:-15px;line-height:16px;}
+.loginTab.n_login .desc .noticePush .ico-set {display:inline-block;position:relative;top:2px;width:12px;height:12px;background:url('https://oimg1.kbstar.com/img/ocommon/2018/icon_set1.png') no-repeat -139px -42px;background-size:350px auto;opacity:0.6;}
+.loginTab.n_login .desc .noticeLabel:hover {text-decoration:underline;color:#333;}
+.loginTab.n_login .desc .noticeLabel:hover + .noticePush,
+.loginTab.n_login .desc .noticeLabel:focus + .noticePush {display:block;} /* 접근성반영(230511) */
+.loginTab.n_login .box {position:absolute;left:0;bottom:0;height:240px;padding:22px 60px 0 60px;background-color:#FBF9F7;}
+.loginTab.n_login .btn_area {position:relative;}
+.loginTab.n_login .btn_area:after {content:'';display:block;clear:both;}
+.loginTab.n_login .btn_area .btn {display:block;width:100%;height:50px;margin-top:12px;background-color:#ffcf02 !important;font-size:16px;font-weight:bold;line-height:50px;color:#222;}
+.loginTab.n_login .btn_area .btn.row {float:left;width:134px;height:78px;margin-top:0;margin-left:9px;border:1px solid #ddd;background-color:#fff !important;font-size:14px;line-height:20px;color:#5A5A5A}
+.loginTab.n_login .btn_area .btn.row:first-child {margin-left:0;}
+.loginTab.n_login .area2 {height:auto;margin-top:16px;padding:20px 0 11px 0;border-top:1px solid #EBE6E0;}
+.loginTab.n_login .area2 > .btn {height:auto;line-height:24px;}
+.loginTab.n_login .area3 {height:47px;background:none;}
+.loginTab.n_login .area3 > .btn {padding:0 7px 0 11px;line-height:47px;}
+.loginTab.n_login .area3 > .btn:before {height:12px;margin-top:-6px;background-color:#d1d0cf;}
+.loginTab.n_login .area3.bg {margin:20px 60px 0 60px;background-color:#fbf9f7;}
+.loginTab.n_login .area3.bg > .btn {padding:0 18px;}
+
+/* --------------------------------------------------------------------------------
+	# 레이어팝업
+-------------------------------------------------------------------------------- */
+/* 레이아웃 */
+.layerType {border:3px solid #5f584c;padding:17px 15px 20px;}
+.layerType .tit_layerpopH1 {position:relative;margin:-17px -15px 20px;padding:10px 40px 10px 20px;background:#5f584c;font-size:16px;line-height:20px;color:#fff;*zoom:1;}
+.layerType .layerClose a, .layerType p.layerClose button {right:0;top:0 !important;width:40px;height:40px;background:#5f584c url('https://oimg1.kbstar.com/img/ocommon/2018/icon_close_14x14_ffffff.png') no-repeat 50% 50% !important;}
+
+/* 안내문구 */
+.list_type1, .list_type1 > li, .list_type1 > dd {position:relative;padding:0 0 0 10px !important;}
+.list_type1:before, .list_type1 > li:before, .list_type1 > dd:before {content:'';float:left;display:block;margin:7px 7px 0 -10px;width:3px;height:3px;background:#baaa9d;}
+.list_type1 > li + li, .list_type1 > dd, .list_type1 > li > ul, .list_type1 > dd > ul {margin:4px 0 0;}
+.list_type1 > dt {margin:0 0 5px;font-weight:bold;}
+.list_type1 + .list_type1, .txt-mark1 + .list_type1 {margin:10px 0 0;}
+.ie7 .list_type1, .ie7 .list_type1 > li, .ie7 .list_type1 > dd {background:url('https://oimg1.kbstar.com/img/ocommon/bult_list1.gif') no-repeat 0 7px;}
+
+/* 로그인설정 */
+.area-check {position:relative;}
+.area-check legend {overflow:hidden;display:block;width:0;height:0;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);*zoom:1;}
+.area-check label {display:block;position:relative;margin-top:-1px;padding:0 16px 0 30px;border-top:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8;line-height:35px;cursor:pointer;}
+.area-check label:before, .area-check label:after {content:'';display:block;position:absolute;top:9px;left:5px;border-radius:50%;}
+.area-check label:before {width:13px;height:13px;border:1px solid #b1b1b1;background:#fff;}
+.area-check input {float:left;width:10px;height:35px;margin:0 -20px 0 0;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);}
+.area-check input:checked + label:after {margin:4px;width:7px;height:7px;background:#222;}
+.area-check input:focus + label:before {outline:1px dotted #999;}
+.area-check legend + input + label {border-top-color:#c1bdba;}
+.area-check label:last-child {border-bottom-color:#c1bdba;}
+@media \0screen\,screen\9 {
+	.area-check input {display:block;height:30px;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);}
+	.area-check label {padding-left:20px;}
+	.area-check label:before, .area-check label:after {display:none;}
+}
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------
+	# KB모바일 인증서용 추가 190814 황지연
+-------------------------------------------------------------------------------- */
+.area-log .info_n {position:relative; display:block;}
+.area-log .info_n:after {content:''; display:block; clear:both; padding:30px 0 0; border-bottom:2px solid #e8e8e8;}
+.area-log .info_n * {font-family:'맑은 고딕', 'Malgun Gothic' !important;}
+.area-log .info_n > li {position:relative; width:190px; height:160px; border:1px solid #ddd; font-size:12px; display:inline-block; margin-right:10px; margin-top:0; padding:8px; text-align:center; word-break:break-all; box-sizing:border-box;}
+.area-log .info_n > li:nth-child(2)~li {margin-top:10px;}
+.area-log .info_n > li:nth-child(2n){margin-right:0!important;}
+.area-log .info_n > li:hover {background:#eee;}
+.area-log .info_n > li > a {position:relative;display:block;width:100%;height:100%; line-height:16px; word-break:keep-all;}
+.area-log .info_n > li > button {position:absolute;top:0;right:0;width:180px;height:71px;border:0;background:#ffcf00;line-height:71px;font-size:16px;font-weight:700;color:#222;}
+
+.area-log .area4> button {position: relative;top:0;right:0;width:174px;height:35px;border:0;background:#ffcf00;line-height:35px;font-size: 14px;font-weight:600;color:#222;/* margin-left: 5px; */}
+.area-log .info_n > li a:before {content:'';display:block;position:absolute;top:25px;left:72px;width:30px;height:30px;background:url('https://oimg1.kbstar.com/img/ocommon/2020/login/icon_set1_n.png') no-repeat 0 0;} /* 2019.05.13 이미지경로 수정 */
+.area-log .info_n > li a.ic1:before {top:15px;}
+.area-log .info_n > li a.ic2:before {top:15px;background-position:-60px 0}
+.area-log .info_n > li a.ic3:before {background-position:-90px 0}
+.area-log .info_n > li a.ic4:before {background-position:-120px 0}
+.area-log .info_n > li a:first-child {margin-top:0;}
+.area-log .info_n > li a > p {margin:0 0 10px; padding-top:60px; font-size:16px; font-weight:bold; line-height:20px;}
+.area-log .info_n > li a.ic1 > p, .area-log .info_n > li a.ic2 > p {padding-top:50px;}
+.area-log .info_n > li a.ic2 > p {margin-bottom:6px;}
+.area-log .info_n > li a > p small {font-weight:normal;}
+.area-log .info_n + .area4 {margin-top:16px;}
+
+/* KB든든간편인증 연동로그인 삭제에 따른 ui변경(2022-05-16) */
+.etcTab_n .info_n>li{width:100%;padding:0;height:103px;margin-top:10px !important;}
+.etcTab_n .info_n>li:first-child{margin-top:0 !important;}
+.etcTab_n .info_n>li>a{text-align:left;width:auto;display:block;padding:0 0 0 91px;font-size:13px;}
+.etcTab_n .info_n>li>a:before{left:26px;top:29px !important;width:44px;height:44px;background:url(https://oimg1.kbstar.com/img/ocommon/2020/login/icon_set1_big.png) no-repeat;}
+.etcTab_n .info_n>li>a.ic1:before{background-position:0 0;}
+.etcTab_n .info_n>li>a.ic2:before{background-position:-44px 0;}
+.etcTab_n .info_n>li>a.ic4:before{background-position:-88px 0;}
+.etcTab_n .info_n>li>a p{padding-top:21px !important;margin-bottom:6px;font-size:17px;}
+.area-log.enterprise .etcTab_n .tabCon .info_n>li.etcTabSub02{padding:0}
+.area-log.enterprise .etcTab_n .tabCon .info_n>li.etcTabSub02>a:before{top:24px !important}
+
+/* 2021.09.17 기업뱅킹 로그인 추가 */
+.area-log.enterprise .tabCon .info_n > li{padding:26px 8px;width:100%;height:111px;border-color:#e8e8e8}
+.area-log.enterprise .tabCon .info_n > li a{padding-left:111px;color:#4e473f;font-size:12px;line-height:18px;text-align:left;}
+.area-log.enterprise .tabCon .info_n > li a:before{top:0;left:37px;width:48px;height:59px;background:url(https://oimg1.kbstar.com/img/obiz/2021/kb-ico-cert.png) no-repeat;}
+.area-log.enterprise .tabCon .info_n > li a.ic1:before{top:0;}
+.area-log.enterprise .tabCon .info_n > li a > p{margin:0 0 5px;color:#4e473f;}
+.area-log.enterprise .tabCon .info_n > li a.ic1 > p, .area-log.enterprise .tabCon .info_n > li a.ic2 > p{padding-top:0}
+.area-log.enterprise .tabCon .area4 > a:before{border-left-color:#978c86;}
+.area-log.enterprise .tabCon .area4 > a:before, .area-log.enterprise .tabCon .area4 > a:after{top:55%}
+
+
+/*--------------------------------------------------------------------------------
+	# QR로그인 추가 및 디자인 개선 (2024)
+---------------------------------------------------------------------------------*/
+.obankloginWrap input{font-size:14px;}
+#FOOTER_2015{margin-top:0 !important;}
+#RENO_2015 .headerWrap{border-bottom-color:#d9d2c8 !important;}
+.obankloginWrap{padding:20px 0 50px; background-color:#e8e1d7}
+.obankloginWrap .inner{position:relative;margin:0 auto;width:856px;}
+.obankloginWrap .inner .loginBox{position:relative; min-height:492px; background-color:#fff;}
+
+.loginBox .loginTab {position:relative;z-index:2;display:table;table-layout:fixed;width:100%;border-top:0;padding-top:0;*display:block;*text-align:center;}
+.loginBox .loginTab:after {display:none;}
+.loginBox .loginTab > li {float:none;display:table-cell;vertical-align:top;*display:inline;*zoom:1;*width:33%;}
+.loginBox .loginTab > li .atit {display:block;position:relative;left:0 !important;top:0;width:100% !important;height:58px;line-height:60px; font-size:18px; font-weight:bold; border-bottom:none; background:#fbf9f7;color:#929292;}
+.loginBox .loginTab > li.active .atit {color:#545046;background:#fff;}
+.loginBox .loginTab > li .atit .ic_kbcert{position:relative;padding-left:34px;}
+.loginBox .loginTab > li .atit .ic_kbcert:before{content:'';position:absolute;left:0;top:-3px;width:30px;height:30px;background:url(https://oimg1.kbstar.com/img/ocommon/login/ico_cert.png) no-repeat;}
+.loginBox .tabCon {display:none; *text-align:left; min-height:434px;}
+.loginBox .tabCon.active{display:block;}
+
+.loginBox .mmbox{display:table;table-layout:fixed;width:100%; position: relative;}
+.loginBox .smbox{display:table-cell;padding:0 54px;*float:left;}
+.loginBox .smbox::after{content:'';height:356px;width:1px;background-color:#e8e8e8;position:absolute;left:50%;top:39px;}
+.loginBox .smbox h2{text-align:center;font-size:16px;color:#222;font-weight:700;line-height:1.5;}
+.loginBox .smbox .formBox{margin-top:27px;}
+.loginBox .smbox .formBox .qrCodeBox{position:relative;text-align:center;}
+.loginBox .smbox .formBox .qrCodeBox .qrCode{}
+
+.loginBox .form label.hidden {display:block;line-height:42px;float:left;margin:0 0 6px 0;font-size:14px;}
+.loginBox .form label + .input {width:240px;height:42px;margin:0 0 6px 0;padding-left:12px !important;border-color:#d3d3d3;float:right;}
+.loginBox .form label + .input::after{zoom:1;content:'';display:block;clear:both;}
+.loginBox .form label + .input::placeholder {color:#919191;}
+.loginBox .form label + .input:last-of-type, .loginBox .form label.hidden:last-of-type {margin-bottom:0;}
+.loginBox .btn_area {clear:both; display:block; padding-top:12px; padding-top:6px \0/IE8;}
+.loginBox .btn_area button.btn {display:block;width:100%;height:50px;font-size:16px;font-weight:bold;line-height:50px;color:#222;background-color:#ffcf02 !important;}
+
+/*certtabCont:QR, PUSH 로그인*/
+#certtabCont .smbox{padding-top:44px;}
+.qrCodeBox{padding:0 40px;}
+.qrCodeBox .qrImg{text-align:center;}
+.qrCodeBox .qrImg div{display:inline-block; height:160px; width:160px; background:url(https://oimg1.kbstar.com/img/ocommon/login/bg_qrCode2.jpg) no-repeat center top}
+.qrCodeBox .qrImg div img{width:160px; height:160px;}
+.qrCodeBox .qrImg+.btn_area{margin-top:28px;}
+.qrCodeBox .qrCodeNum{line-height:20px;}
+.qrCodeBox .qrCodeNum .time{color:#222; font-size: 14px; letter-spacing:-0.6px}
+.qrCodeBox .qrCodeNum .time strong{padding-left:4px; color:#f46600; font-weight:bold;}
+.qrCodeBox .qrCodeNum .time .timeWrapper span.separator{margin-left:-3px;}
+.qrCodeBox .qrCodeNum .code{width:118px; color:#222; margin:0 auto 4px; padding:3px 0 3px; background-color:#f6f6f6;}
+.qrCodeBox .qrCodeNum .code strong{position:relative; padding-left:8px; font-size:16px; font-weight:bold;}
+.qrCodeBox .qrCodeNum .g_txt{margin-top:20px;}
+.formBox.push .btn_area {padding-left:78px;}
+.loginBox .smbox .formBox.push{margin-top:16px;}
+.loginBox .smbox .formBox.qrCo{margin-top:16px;}
+.loginBox .qrCodeBox .btn_area{margin-top:22px; padding-top:0px;}
+.loginBox .formBox.push .btn_area{padding-top: 44px;}
+/*임시 삭제 대상*/
+.loginBox #certtabCont .smbox::after{content:none;}
+.loginBox #certtabCont .qrCodeBox .btn_area button.btn{display:inline-block; width:320px; text-align:center;}
+
+
+/* 스마트폰 push 툴팁 */
+.loginBox .desc.push {position:relative;font-size:0; text-align:center;}
+.loginBox .desc.push a{display:inline-block;padding:10px 0; font-size:12px;color:#717171;position:relative;padding-right:16px;}
+.loginBox .desc.push a .tip{position:absolute;top:-9999%;left:-9999%;text-indent:-9999px;}
+.loginBox .desc.push a::after{content:'';position:absolute;top:50%;right:0;width:12px;height:12px;margin-top:-6px;background:url('https://oimg1.kbstar.com/img/ocommon/login/ico_set.png') no-repeat 0 -30px;}
+.loginBox .desc.push .noticePush {display: none;position:absolute;left: 50%;right:60px;top:33px;width:440px;padding:16px 20px;border:1px solid #bbb;background-color:#fff;text-align:left;z-index:2;margin-left: -220px;}
+.loginBox .smbox + .smbox .desc.push .noticePush{width:440px;}
+.loginBox .desc.push .noticePush .tit {font-weight:bold;color:#545046;}
+.loginBox .desc.push .noticePush .list {margin-top:3px;counter-reset:list-number 0;}
+.loginBox .desc.push .noticePush .list li {float:none;line-height:16px;position:relative;padding-top:6px; padding-left:2px; color:#717171;}
+.loginBox .desc.push .noticePush .list li br + span {padding-left:15px}
+.loginBox .desc.push .noticePush .list li:before {display:block; position:absolute; left:0; top:8px; width:14px; height:14px; border-radius:50%; background-color:#928782;color:#fff; content:counter(list-number); counter-increment:list-number 1; text-align:center; line-height:14px;font-size:8px;}
+.loginBox .desc.push .noticePush .ico-set {display:inline-block;position:relative;top:2px;width:12px;height:12px;background:url('https://oimg1.kbstar.com/img/ocommon/2018/icon_set1.png') no-repeat -139px -42px;background-size:350px auto;opacity:0.6;}
+.loginBox .desc.push .noticeLabel:hover {text-decoration:underline;color:#333;}
+.loginBox .desc.push .noticeLabel:hover + .noticePush,
+.loginBox .desc.push .noticeLabel:focus + .noticePush {display:block;} /* 접근성반영(230511) */
+
+/* certLoginCont:공동, 금융 인증 로그인 */
+#certLoginCont .smbox{padding-top:120px;}
+.loginBox .pubFinLogin .btn_area {padding:0;}
+.loginBox .pubFinLogin .btn_area button.btn{}
+.loginBox .pubFinLogin .btn_area.gray{margin-top:12px;}
+.loginBox .pubFinLogin .btn_area.gray button.btn{height:48px; line-height:48px; color:#5a5a5a; background-color:#fff !important; border:1px solid #ddd;}
+
+/* idtabCont:아이디 로그인 */
+.loginBox .idtabContents{position:relative;width:400px;margin:0 auto; padding-top:124px; padding-bottom:64px;}
+.loginBox .idtabContents .form{}
+.loginBox .idtabContents .form legend{overflow:hidden;display:block;width:0;height:0;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);*zoom:1;}
+.loginBox .idtabContents .idpw{clear:both;padding-top:6px; position:relative;}
+.loginBox .idtabContents .idpw .mouse{position:absolute; right:1px;top:7px;height:40px;background-color:#fff;border-left:1px solid #d3d3d3;padding-right:10px;padding-left:10px;}
+.loginBox .idtabContents .idpw .mouse .nProtectUseYn{background:none; -webkit-appearance:auto}
+.loginBox .idtabContents .form label + .input{width:320px;}
+.loginBox .idtabContents .form .input.nppfs-npv[readonly]{background-color:#f8f9f7;}
+.loginBox .idtabContents .form .loginJumin {clear:both;padding-top:6px;}
+.loginBox .idtabContents .form .loginJumin .caution{margin-left:80px;margin-top:6px;color:#928881}
+.loginBox .idtabContents .form label{line-height:42px}
+.loginBox .idtabContents .btn_area{padding-left:80px;}
+.loginBox .idtabContents .form .loginCaptcha{clear:both;padding-top:6px;padding-left:80px;}
+.loginBox .idtabContents .form .loginCaptcha .img{float:left;width:250px; height:65px; border:1px solid #d3d3d3;}
+.loginBox .idtabContents .form .loginCaptcha .area5{float:right; width:68px; min-height:65px;}
+.loginBox .idtabContents .form .loginCaptcha .area5 button{display:inline-block; border:1px solid #d3d3d3; border-left:none; padding:3px; background-color:#fff;overflow:hidden; width:68px; height:33px;}
+.loginBox .idtabContents .form .loginCaptcha .area5 button:last-child{border-top:none; height:34px;}
+.loginBox .idtabContents .form .loginCaptcha .area5 + label {clear:both;display:block;}
+.loginBox .idtabContents .form .loginCaptcha .input{margin-top:-36px;position:relative;z-index:3;}
+.loginBox .idtabContents .form .loginCaptcha .input::placeholder{font-size:12px;}
+.loginBox .idtabContents .area3{padding-left:78px;}
+
+.obankloginWrap .loginBox .area3{text-align:center;margin-top:16px}
+.obankloginWrap .loginBox .area3 a{position:relative; margin:0 8px 0 7px; color:#767676; font-size:14px; line-height:1.5}
+.obankloginWrap .loginBox .area3 a:first-of-type:before{display:none}
+.obankloginWrap .loginBox .area3 a:first-child{margin-left:0;}
+.obankloginWrap .loginBox .area3 a:last-child{margin-right:0;}
+.obankloginWrap .loginBox .area3 a:before{content:''; display:block; position:absolute; top:5px; left:-10px; width:1px; height:12px; background: #c5c5c5;;}
+
+.obankloginWrap .linkArea{ width:100%; height:64px; background:#fbf9f7;}
+.obankloginWrap .linkArea ul{overflow:hidden; text-align:center; padding-top:20px;}
+.obankloginWrap .linkArea li{display:inline-block; margin:0 15px;}
+.obankloginWrap .linkArea li a{position:relative; color:#222; font-size:16px;padding-left:30px;}
+.obankloginWrap .linkArea li a:before{content:'';display:block;position:absolute;left:0;top:0;width:24px;height:24px;background:url('https://oimg1.kbstar.com/img/ocommon/login/ico_set.png') no-repeat 0 0;}
+.obankloginWrap .linkArea li a.ic0:before{width:26px !important;height:26px !important;}
+.obankloginWrap .linkArea li a.ic1:before{background-position:-30px 0;}
+.obankloginWrap .linkArea li a.ic2:before{background-position:-60px 0;}
+.obankloginWrap .linkArea li a.ic3:before{background-position:-90px 0;}
+
+.obankloginWrap .botGuideTxt{margin-top:20px;}
+.obankloginWrap .botGuideTxt > .txt > li{position:relative; padding-left:18px;}
+.obankloginWrap .botGuideTxt > .txt > li:before {content:''; display:block; position:absolute; top:6px; left:8px; width:3px; height:3px; background:#8c754e;}
+.errirMessageBox.ver2024 #errorDiv,
+#preBanner .errirMessageBox.ver2024 #errorDiv{width:856px !important; margin: 0 auto !important; padding-bottom: 20px;}
+#preBanner .errirMessageBox.ver2024 .notiArea.error, 
+#preBanner .errirMessageBox.ver2024 .serError{margin-bottom: 0 !important;}
+/* 로그아웃 */
+.logioutBox{background-color:#fff;}
+.logioutBox .msgZone{margin:0 auto; width:750px; min-height:289px; padding:84px 0 64px; text-align:center; color:#222; }
+.logioutBox .msgZone h3.tit{position:relative; padding-top:72px; font-size:24px; font-weight:bold; color: #222; line-height:35px;}
+.logioutBox .msgZone h3.tit::before{content:''; position:absolute; top:0; left:50%; margin-left:-25px; width:50px; height:52px; background:url('https://oimg1.kbstar.com/img/ocommon/login/ico_set.png') no-repeat 0 -60px;}
+.logioutBox .msgZone h3.tit b{}
+.logioutBox .msgZone .txt{margin-top:12px; line-height:23px;}
+.logioutBox .msgZone .txt p{font-size:14px; color:#717171; line-height:23px;}
+.logioutBox .msgZone .txt p.space{margin-top:12px;}
+.logioutBox .msgZone .txt p b{color: #222;}
+.logioutBox .msgZone .btnBox{text-align:center; margin-top:30px;}
+.logioutBox .msgZone .btnBox .btn {width:320px; height:50px; font-size:14px; font-weight:bold; color:#222; line-height:50px; text-align:center; background:#ffcf00;}
+.logioutBox .btm_ban{padding:24px 0 25px; background-color:#FBF9F7;}
+.logioutBox .btm_ban .inn{display:table; margin:0 auto; }
+.logioutBox .btm_ban .inn::before{content:''; display:table-cell; width:86px; height:70px; background:url('https://oimg1.kbstar.com/img/ocommon/login/ico_set.png') no-repeat -70px -60px;}
+.logioutBox .btm_ban .inn .txt{margin-top:6px; color:#222;}
+.logioutBox .btm_ban .inn a{display:block; margin-top:4px; color:#06809b; font-weight: bold;}
+
+/* KB국민인증서(기업) 로그인 화면 제어 */
+.obankloginWrap.corporation .loginBox {min-height:auto;}
+.obankloginWrap.corporation .loginBox .tabCon {min-height:376px;}
+.obankloginWrap.corporation .loginBox #certtabCont .smbox {padding-top:120px;}
+.obankloginWrap.corporation .loginBox .smbox::after {height:242px; top:64px}
+.obankloginWrap.corporation .loginBox .loginTab #idtab {display:none;}
+.obankloginWrap.corporation .loginBox .tabCon#idtabCont {display:none;}
+.obankloginWrap.corporation .botGuideTxt {position:relative;}
+.obankloginWrap.corporation .botGuideTxt .info-link {display:block;position:absolute;right:10px;top:0;padding:3px 6px 0;color:#222;border:1px solid #bebebe;background:#f1f1f1;}
+.obankloginWrap.corporation .loginBox #certtabCont .smbox.qrCase{padding-top:30px; vertical-align: top;}
+.obankloginWrap.corporation .loginBox #certtabCont .qrCodeBox .btn_area button.btn{width: 100%}
+.obankloginWrap.corporation .loginBox #certtabCont .smbox.qrCase:after{content:'';}
